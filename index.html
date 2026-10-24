@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+  <title>HomeEase - Reliable On-Demand Home Services</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-fixed-variant": "#005049",
+            "on-secondary-container": "#006f66",
+            "primary": "#000000",
+            "surface-bright": "#f8f9ff",
+            "outline-variant": "#c6c6cd",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "surface": "#f8f9ff",
+            "on-primary-fixed": "#131b2e",
+            "on-primary-fixed-variant": "#3f465c",
+            "secondary-fixed-dim": "#6bd8cb",
+            "tertiary-container": "#00164e",
+            "on-tertiary-fixed-variant": "#264191",
+            "on-background": "#0b1c30",
+            "background": "#f8f9ff",
+            "outline": "#76777d",
+            "surface-container-high": "#dce9ff",
+            "secondary-fixed": "#89f5e7",
+            "inverse-surface": "#213145",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#cbdbf5",
+            "tertiary": "#000000",
+            "on-tertiary-container": "#6780d3",
+            "inverse-primary": "#bec6e0",
+            "on-surface": "#0b1c30",
+            "surface-container-highest": "#d3e4fe",
+            "surface-container": "#e5eeff",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#eaf1ff",
+            "tertiary-fixed-dim": "#b6c4ff",
+            "surface-tint": "#565e74",
+            "primary-fixed": "#dae2fd",
+            "primary-container": "#131b2e",
+            "surface-container-low": "#eff4ff",
+            "secondary": "#006a61",
+            "secondary-container": "#86f2e4",
+            "on-primary-container": "#7c839b",
+            "tertiary-fixed": "#dce1ff",
+            "on-surface-variant": "#45464d",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#00164e",
+            "on-secondary-fixed": "#00201d",
+            "primary-fixed-dim": "#bec6e0",
+            "on-error-container": "#93000a",
+            "surface-variant": "#d3e4fe"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        }
+      }
+    };
+  </script>
+  
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen">
+
+  <div class="app-frame relative">
+
+    <!-- ============================================================== -->
+    <!-- GLOBAL TOP HEADER (Responsive: Mobile Bar + Full Desktop Nav) -->
+    <!-- ============================================================== -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+      <div class="h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+        
+        <!-- Logo & Brand Header -->
+        <div class="flex items-center gap-3 cursor-pointer select-none" onclick="navigateTo('home')">
+          <img alt="HomeEase Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XkRGKsRrX_k8qNutuwSAvysLwyd1WvPhCfxPKPQ5Kh-7uqdsLj_d9-bIobyys1vTGY9hSEmU4gliNSfWIl3A-oiYWGtwh1vR1-ZXvPk5qn5NCHFWPGRuT_nQo1p2ByQVtGZbyjz39cIr2eNgkMqiya7XvOSSdWya18o-aOJAAcrRNVWmfaOvHowsstua-tzeVJloHkjWjFHSkcoxfyP7B0BaXZEVibn-5qksy0HDgR-SMJflxQNFwdw4M"/>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">HomeEase</span>
+            <span id="header-page-title" class="font-label-sm text-xs text-secondary font-semibold md:hidden">Home</span>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Bar (Visible on md+ screens) -->
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+          <button type="button" class="nav-tab active flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-secondary font-semibold hover:bg-surface-container transition-all" data-screen="home" onclick="navigateTo('home')">
+            <span class="material-symbols-outlined text-[20px]">home</span>
+            <span class="font-label-md text-label-md">Home</span>
+          </button>
+          <button type="button" class="nav-tab flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-screen="services" onclick="navigateTo('services')">
+            <span class="material-symbols-outlined text-[20px]">grid_view</span>
+            <span class="font-label-md text-label-md">Services</span>
+          </button>
+          <button type="button" class="nav-tab flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-screen="book" onclick="navigateTo('book')">
+            <span class="material-symbols-outlined text-[20px]">add_circle</span>
+            <span class="font-label-md text-label-md">Book a Service</span>
+          </button>
+          <button type="button" class="nav-tab flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-screen="customer-dashboard" onclick="navigateTo('customer-dashboard')">
+            <span class="material-symbols-outlined text-[20px]">calendar_today</span>
+            <span class="font-label-md text-label-md">My Bookings</span>
+          </button>
+          <button type="button" class="nav-tab flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-screen="provider-dashboard" onclick="navigateTo('provider-dashboard')">
+            <span class="material-symbols-outlined text-[20px]">engineering</span>
+            <span class="font-label-md text-label-md">Provider Portal</span>
+          </button>
+        </nav>
+
+        <!-- Right Controls: Quick Menu Drawer & User Profile Avatar -->
+        <div class="flex items-center gap-2">
+          <!-- Quick Menu Drawer Button -->
+          <button id="header-menu-btn" aria-label="Menu" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleQuickMenu()">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+          
+          <!-- User Profile / Switcher Button -->
+          <button id="header-profile-btn" aria-label="User Profile" class="flex items-center gap-2.5 py-1.5 px-2.5 rounded-full hover:bg-surface-container transition-colors relative" onclick="openProfileScreen()">
+            <div class="relative flex-shrink-0">
+              <img id="header-avatar" alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGsnx4Tzx7H-O5aqk8CnGYORcnwKdrpdpa_IDPOMDGh5su9VEC6JyIV9ag_kDxwbKU-Nc-WiJADAevyxYUueoatC7oR5CqhEiryElly5tAV-e4bS9Q9f8czouDbF4oTmFrE6qV4RAMNGkOoWcLHzaVnRnKjH2zGxJUFegP4ABz0CJHtvrm1DM7tuvw0JQaTMgH2dogdK7V9rUfDCamSZHopSszTZblNuznyzk3pDwaK1bExVcxAr0V"/>
+              <span id="header-role-dot" class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-white"></span>
+            </div>
+            <span id="header-user-name" class="hidden sm:inline font-label-md text-label-md font-semibold text-on-surface pr-1">Alex</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HEADER QUICK MENU DROPDOWN -->
+    <div id="quick-menu" class="hidden fixed top-16 right-4 sm:right-8 z-50 w-72 bg-surface-container-lowest rounded-2xl shadow-2xl border border-surface-container p-space-md animate-in fade-in zoom-in-95">
+      <div class="flex items-center justify-between pb-space-xs border-b border-surface-container mb-space-xs">
+        <span class="font-label-md text-label-md text-on-surface-variant font-semibold">HomeEase Navigation</span>
+        <button onclick="toggleQuickMenu()" class="text-on-surface-variant hover:text-on-surface p-1">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-1">
+        <button onclick="navigateTo('home'); toggleQuickMenu();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-surface-container text-left text-on-surface font-label-md text-label-md">
+          <span class="material-symbols-outlined text-secondary text-[20px]">home</span>
+          <span>1. Home Screen</span>
+        </button>
+        <button onclick="navigateTo('services'); toggleQuickMenu();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-surface-container text-left text-on-surface font-label-md text-label-md">
+          <span class="material-symbols-outlined text-secondary text-[20px]">grid_view</span>
+          <span>2. All Services Catalog</span>
+        </button>
+        <button onclick="navigateTo('book'); toggleQuickMenu();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-surface-container text-left text-on-surface font-label-md text-label-md">
+          <span class="material-symbols-outlined text-secondary text-[20px]">add_circle</span>
+          <span>3. Book a Service Flow</span>
+        </button>
+        <button onclick="navigateTo('customer-dashboard'); toggleQuickMenu();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-surface-container text-left text-on-surface font-label-md text-label-md">
+          <span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span>
+          <span>4. Customer Dashboard</span>
+        </button>
+        <button onclick="navigateTo('provider-dashboard'); toggleQuickMenu();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-surface-container text-left text-on-surface font-label-md text-label-md">
+          <span class="material-symbols-outlined text-secondary text-[20px]">engineering</span>
+          <span>5. Provider Portal</span>
+        </button>
+        <button onclick="navigateTo('login'); toggleQuickMenu();" class="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-surface-container text-left text-on-surface font-label-md text-label-md">
+          <span class="material-symbols-outlined text-secondary text-[20px]">lock</span>
+          <span>6. Login / Register</span>
+        </button>
+      </div>
+      <div class="mt-space-xs pt-space-xs border-t border-surface-container flex flex-col gap-1.5">
+        <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">1-Click College Demo Profiles</span>
+        <div class="grid grid-cols-2 gap-1.5">
+          <button onclick="loginDemo('customer'); toggleQuickMenu();" class="py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest rounded-lg text-label-sm font-label-sm text-on-surface text-center">
+            Alex (Customer)
+          </button>
+          <button onclick="loginDemo('provider'); toggleQuickMenu();" class="py-1.5 px-2 bg-secondary-container hover:opacity-90 rounded-lg text-label-sm font-label-sm text-on-secondary-container text-center font-semibold">
+            Marcus (Pro)
+          </button>
+        </div>
+        <button id="quick-menu-logout-btn" onclick="handleLogout(); toggleQuickMenu();" class="hidden mt-1 flex items-center gap-2 px-3 py-1.5 rounded-lg text-error hover:bg-error-container/20 text-left font-label-sm text-xs font-semibold">
+          <span class="material-symbols-outlined text-[16px]">logout</span>
+          <span>Sign Out of Account</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- MAIN RESPONSIVE CONTENT AREA (pt-20 on mobile, pt-24 on desktop) -->
+    <!-- ============================================================== -->
+    <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-24 pb-24 md:pb-12 bg-surface min-h-screen">
+
+      <!-- ============================================================== -->
+      <!-- SCREEN 1: HOMEPAGE (homeease_homepage) -->
+      <!-- ============================================================== -->
+      <section id="screen-home" class="screen-view flex flex-col w-full space-y-8">
+        
+        <!-- Top Welcome Banner / Hero (Responsive 2-col on desktop) -->
+        <div class="relative overflow-hidden rounded-2xl bg-surface-container-low shadow-sm p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+          <!-- Ambient Glow Decor -->
+          <div class="absolute -top-12 -right-12 w-48 h-48 bg-secondary-container/40 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="flex flex-col gap-4 max-w-2xl relative z-10">
+            <!-- Verified Badge -->
+            <div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-sm">
+              <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+              <span>Verified &amp; Safe Home Assistance</span>
+            </div>
+            
+            <h1 class="font-headline-lg text-3xl sm:text-4xl lg:text-5xl text-on-surface font-bold tracking-tight leading-tight">
+              Reliable Home Services at Your Doorstep
+            </h1>
+            <p class="font-body-md text-base sm:text-lg text-on-surface-variant leading-relaxed">
+              Book certified local electricians, plumbers, and home cleaners in just a few taps. Simple, prompt, and affordable.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              <button class="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg shadow-md hover:opacity-95 active:scale-95 transition-all font-semibold" onclick="navigateTo('book')">
+                <span>Book a Service</span>
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </button>
+              <button class="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors font-semibold" onclick="navigateTo('services')">
+                <span>Explore Services</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Desktop Quick Highlights Card -->
+          <div class="hidden md:flex flex-col gap-3.5 min-w-[280px] bg-surface-container-lowest/80 backdrop-blur-md p-6 rounded-2xl border border-surface-container shadow-sm relative z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-secondary-container text-secondary flex items-center justify-center">
+                <span class="material-symbols-outlined">bolt</span>
+              </div>
+              <div>
+                <p class="font-headline-sm text-headline-sm font-bold text-on-surface">30-Min Arrival</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Instant technician dispatch</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-secondary-container text-secondary flex items-center justify-center">
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <div>
+                <p class="font-headline-sm text-headline-sm font-bold text-on-surface">500+ Verified Pros</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Background screened &amp; certified</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-secondary-container text-secondary flex items-center justify-center">
+                <span class="material-symbols-outlined">shield</span>
+              </div>
+              <div>
+                <p class="font-headline-sm text-headline-sm font-bold text-on-surface">100% Guaranteed</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">30-day rework warranty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats / Trust Row -->
+        <div class="grid grid-cols-3 gap-3 sm:gap-6">
+          <div class="flex flex-col items-center justify-center text-center p-4 sm:p-6 rounded-2xl bg-surface-container-lowest shadow-sm">
+            <div class="flex items-center gap-1 text-secondary">
+              <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="font-headline-md text-xl sm:text-2xl font-bold text-on-surface">4.8</span>
+            </div>
+            <span class="font-label-sm sm:font-label-md text-on-surface-variant mt-1">Average Customer Rating</span>
+          </div>
+          <div class="flex flex-col items-center justify-center text-center p-4 sm:p-6 rounded-2xl bg-surface-container-lowest shadow-sm">
+            <div class="flex items-center gap-1 text-secondary">
+              <span class="material-symbols-outlined text-[22px]">verified</span>
+              <span class="font-headline-md text-xl sm:text-2xl font-bold text-on-surface">500+</span>
+            </div>
+            <span class="font-label-sm sm:font-label-md text-on-surface-variant mt-1">Licensed Specialists</span>
+          </div>
+          <div class="flex flex-col items-center justify-center text-center p-4 sm:p-6 rounded-2xl bg-surface-container-lowest shadow-sm">
+            <div class="flex items-center gap-1 text-secondary">
+              <span class="material-symbols-outlined text-[22px]">bolt</span>
+              <span class="font-headline-md text-xl sm:text-2xl font-bold text-on-surface">30-Min</span>
+            </div>
+            <span class="font-label-sm sm:font-label-md text-on-surface-variant mt-1">Rapid Doorstep Arrival</span>
+          </div>
+        </div>
+
+        <!-- Featured Popular Services Section (Responsive 3-Column Grid on Desktop) -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="font-headline-md text-2xl font-bold text-on-surface">Popular Services</h2>
+              <p class="font-body-sm text-on-surface-variant mt-0.5">Top-requested pros in your neighborhood</p>
+            </div>
+            <button class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1 font-semibold" onclick="navigateTo('services')">
+              <span>View all services</span>
+              <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+            </button>
+          </div>
+
+          <!-- 3-Column Service Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 1. Electrician Card -->
+            <div class="group bg-surface-container-lowest rounded-2xl shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div class="w-14 h-14 rounded-2xl bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <span class="material-symbols-outlined text-[32px]">bolt</span>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-2">
+                      <h3 class="font-headline-sm text-lg font-bold text-on-surface truncate">Electrician</h3>
+                      <span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs font-semibold">From $29</span>
+                    </div>
+                    <p class="font-body-sm text-sm text-on-surface-variant mt-1 line-clamp-2">
+                      Wiring repairs, switch installation, appliance fixes &amp; emergency power issues.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Electrician inspecting breaker box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuhtknaIgbGS-h6hpCDNL7TXR0z7ZVdOoglxOjSNY_poI5QBWtOMw2As8W7I1gaKNEeNrzkuSbV-zozZnWEQW24ATm480ghk4mgJ-e9hxQK8iqoKkt-JT5XW5GoMRiutiulTffi0y5o-plMULbhQFfW-Q_597QAvmS8PBT_qPXMjslG_BrQBUNiS-gCtVvv2WSoeOCyTrDJuVh9wQP6JBnW2AbmBxExvULWWMbIKUU3jxa7e5gT4Nc"/>
+                  <div class="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-xs flex items-center gap-1 font-semibold">
+                    <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">shield</span>
+                    <span>100% Guaranteed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-4 mt-2 border-t border-surface-container">
+                <div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-xs">
+                  <span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+                  <span>Est. 45 mins</span>
+                </div>
+                <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-md text-sm font-semibold hover:opacity-95 active:scale-95 transition-all shadow-sm" onclick="openBookingWithService('Electrician', '29.00')">
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Plumber Card -->
+            <div class="group bg-surface-container-lowest rounded-2xl shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div class="w-14 h-14 rounded-2xl bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <span class="material-symbols-outlined text-[32px]">plumbing</span>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-2">
+                      <h3 class="font-headline-sm text-lg font-bold text-on-surface truncate">Plumber</h3>
+                      <span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs font-semibold">From $25</span>
+                    </div>
+                    <p class="font-body-sm text-sm text-on-surface-variant mt-1 line-clamp-2">
+                      Leak repairs, tap replacements, drain cleaning &amp; pipe fittings.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Plumber under kitchen sink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsd3dn-fepWnxbUcCPRdHvhUfkTLaLn76Tm2odFsRbthMeUZj2AUi-TU9_Z-xq61-pjMWrRH_OdF1rkV0HVGSkdSUDM58_mOpVkl1N4xA4p218N_IResvYme8T8sZ8qthnsYjXUvu14uA6ZmEAxtr4imIxG3yCM-6ZMu1vZVydbIF25yKhfnDOmKMkE7Hqm14RBIIALP1jqbsl4r70usJtjjIZd-lyHpWn8VLjsTUpz0_w9Yh5c5Df"/>
+                  <div class="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-xs flex items-center gap-1 font-semibold">
+                    <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">speed</span>
+                    <span>Prompt Diagnosis</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-4 mt-2 border-t border-surface-container">
+                <div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-xs">
+                  <span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+                  <span>Est. 30 mins</span>
+                </div>
+                <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-md text-sm font-semibold hover:opacity-95 active:scale-95 transition-all shadow-sm" onclick="openBookingWithService('Plumber', '25.00')">
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Home Cleaning Card -->
+            <div class="group bg-surface-container-lowest rounded-2xl shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div class="w-14 h-14 rounded-2xl bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <span class="material-symbols-outlined text-[32px]">cleaning_services</span>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-2">
+                      <h3 class="font-headline-sm text-lg font-bold text-on-surface truncate">Home Cleaning</h3>
+                      <span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-xs font-semibold">From $39</span>
+                    </div>
+                    <p class="font-body-sm text-sm text-on-surface-variant mt-1 line-clamp-2">
+                      Deep kitchen &amp; bathroom scrubbing, dusting, vacuuming &amp; sanitize.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Spotless clean living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI3jEkYq13vq628FbsLua5hvHl1jgZHnK_GEydlrBYCGbraSz0q7q9VL9SvjdzPS080vNySYah_CoSGo3BZ19n9tDm5MGU5v_BkFwsFGM9ALYVjARwAB8vGpLIxi80bE3Y1Ob-K8yEPRkgKpR34Xn2eLh8pQZKVYEP2MSEQt4DX4Hl-n5rQk-8OzpIUXHeunhdI8PUKfqNMn3qi0HliqCqH5X4UfBDBmCDRp0BTKOfy8I2iVuntXVL"/>
+                  <div class="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-xs flex items-center gap-1 font-semibold">
+                    <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
+                    <span>Eco-Friendly Supplies</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-4 mt-2 border-t border-surface-container">
+                <div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-xs">
+                  <span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+                  <span>Est. 2 hours</span>
+                </div>
+                <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-md text-sm font-semibold hover:opacity-95 active:scale-95 transition-all shadow-sm" onclick="openBookingWithService('Home Cleaning', '39.00')">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- How It Works Section (Responsive 3-Col on Desktop) -->
+        <div class="flex flex-col gap-6 pt-4">
+          <div>
+            <h2 class="font-headline-md text-2xl font-bold text-on-surface">How It Works</h2>
+            <p class="font-body-sm text-on-surface-variant mt-0.5">Quality assistance in 3 effortless steps</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-secondary-container text-on-secondary-container font-headline-sm text-lg flex items-center justify-center flex-shrink-0 font-bold">1</div>
+              <div class="flex flex-col min-w-0">
+                <h4 class="font-label-lg text-base font-bold text-on-surface">Choose Service</h4>
+                <p class="font-body-sm text-sm text-on-surface-variant mt-1 leading-relaxed">Select from verified repairs, cleaning, and maintenance tasks.</p>
+              </div>
+            </div>
+            <div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-secondary-container text-on-secondary-container font-headline-sm text-lg flex items-center justify-center flex-shrink-0 font-bold">2</div>
+              <div class="flex flex-col min-w-0">
+                <h4 class="font-label-lg text-base font-bold text-on-surface">Pick Time &amp; Date</h4>
+                <p class="font-body-sm text-sm text-on-surface-variant mt-1 leading-relaxed">Select an instant 30-min window or schedule conveniently ahead.</p>
+              </div>
+            </div>
+            <div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-secondary-container text-on-secondary-container font-headline-sm text-lg flex items-center justify-center flex-shrink-0 font-bold">3</div>
+              <div class="flex flex-col min-w-0">
+                <h4 class="font-label-lg text-base font-bold text-on-surface">Relax as Pros Arrive</h4>
+                <p class="font-body-sm text-sm text-on-surface-variant mt-1 leading-relaxed">Track your specialist live and pay seamlessly post-completion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Satisfaction Testimonial -->
+        <div class="relative overflow-hidden rounded-2xl bg-primary-container text-on-primary shadow-sm p-6 sm:p-8 lg:p-10 flex flex-col gap-4">
+          <div class="flex items-center gap-1 text-secondary-container">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="font-body-lg text-lg sm:text-xl italic text-inverse-on-surface max-w-4xl leading-relaxed">
+            “HomeEase resolved our department lab's urgent switchboard short-circuit in under 35 minutes. Impeccable transparent billing and courteous technicians!”
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold font-label-lg text-base">
+              DR
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="font-label-lg text-base font-bold text-on-primary">Dr. Ramesh Sharma</span>
+              <span class="font-label-sm text-sm text-on-primary-container">Faculty Advisor &amp; Campus Resident</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- College Mini-Project / Footer -->
+        <footer class="pt-6 pb-4 flex flex-col items-center text-center gap-3 text-on-surface-variant">
+          <div class="flex flex-wrap justify-center items-center gap-4 font-label-md text-sm">
+            <button class="hover:text-secondary transition-colors" onclick="showToast('HomeEase: On-Demand Verified Services', 'info')">About HomeEase</button>
+            <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            <button class="hover:text-secondary transition-colors" onclick="showToast('Engineering College Support Desk: Available', 'contact_support')">Contact</button>
+            <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            <button class="hover:text-secondary transition-colors" onclick="showToast('FAQ: Standard pricing & verified pros guaranteed.', 'help')">FAQ &amp; Help</button>
+          </div>
+          <div class="px-4 py-1.5 rounded-full bg-surface-container font-label-sm text-xs text-on-surface-variant">
+            🎓 College Mini-Project 2025 • Engineering Dept.
+          </div>
+        </footer>
+      </section>
+
+      <!-- ============================================================== -->
+      <!-- SCREEN 2: ALL SERVICES (homeease_services) -->
+      <!-- ============================================================== -->
+      <section id="screen-services" class="screen-view hidden flex flex-col w-full space-y-6">
+        
+        <!-- Header Banner -->
+        <div class="relative overflow-hidden rounded-2xl bg-primary-container text-on-primary p-6 sm:p-8 lg:p-10 shadow-sm">
+          <div class="absolute -right-6 -bottom-6 w-48 h-48 rounded-full bg-secondary-container/10 pointer-events-none blur-3xl"></div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold">✓</span>
+            <span class="font-label-md text-label-md text-secondary-fixed font-semibold">Verified Pros &amp; Fixed Rates</span>
+          </div>
+          <h1 class="font-headline-lg text-2xl sm:text-3xl lg:text-4xl text-on-primary font-bold tracking-tight">All Home Services</h1>
+          <p class="font-body-md text-base text-on-primary-container mt-2 max-w-2xl leading-relaxed">
+            Transparent upfront pricing with zero hidden fees. Select a service to get started.
+          </p>
+          <div class="mt-4 pt-2 flex items-center gap-4">
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px] text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="font-label-sm text-sm text-on-primary font-bold">4.9/5 Rating</span>
+            </div>
+            <div class="w-1 h-1 rounded-full bg-on-primary-container"></div>
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px] text-secondary-fixed">verified_user</span>
+              <span class="font-label-sm text-sm text-on-primary">Background Checked</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills Bar (Centered on desktop) -->
+        <div class="overflow-x-auto scrollbar-none py-1">
+          <div class="flex items-center gap-2 sm:justify-center min-w-max" id="categoryFilterContainer">
+            <button class="category-pill active flex items-center gap-1.5 px-4 py-2 rounded-full bg-tertiary-container text-on-primary shadow-sm font-label-md text-sm transition-all duration-200" onclick="filterServicesCategory('all', this)">
+              <span class="material-symbols-outlined text-[16px]">apps</span>
+              <span>All (6)</span>
+            </button>
+            <button class="category-pill flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-sm transition-all duration-200" onclick="filterServicesCategory('electrical', this)">
+              <span class="material-symbols-outlined text-[16px]">bolt</span>
+              <span>Electrical</span>
+            </button>
+            <button class="category-pill flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-sm transition-all duration-200" onclick="filterServicesCategory('plumbing', this)">
+              <span class="material-symbols-outlined text-[16px]">water_drop</span>
+              <span>Plumbing</span>
+            </button>
+            <button class="category-pill flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-sm transition-all duration-200" onclick="filterServicesCategory('cleaning', this)">
+              <span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+              <span>Cleaning</span>
+            </button>
+            <button class="category-pill flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-sm transition-all duration-200" onclick="filterServicesCategory('appliance', this)">
+              <span class="material-symbols-outlined text-[16px]">build</span>
+              <span>Appliance</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Services Grid: 3-column layout on desktop -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesList">
+          <!-- Card 1: Electrician - General Repair -->
+          <article class="service-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="electrical">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-xs uppercase tracking-wider text-on-primary-fixed-variant font-bold">Electrical</span>
+                    <h2 class="font-headline-sm text-lg font-bold text-on-background">Electrician - General Repair</h2>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-label-sm text-xs text-on-surface-variant block">Starts at</span>
+                  <span class="font-headline-md text-xl text-secondary font-bold leading-none">$29</span>
+                </div>
+              </div>
+              <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Switchboard fixes, ceiling fan setup, short circuit triage, and fixture mounting.
+              </p>
+              <div class="bg-surface-container-low rounded-xl p-3 mb-4 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-on-surface">
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>60 Mins inspection</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Tools included</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>30-day warranty</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-surface-container mt-auto">
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                <span class="font-label-sm text-xs">Next Slot: Today, 3 PM</span>
+              </div>
+              <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-semibold active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="openBookingWithService('Electrician', '29.00')">
+                <span>Book Now</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Plumber - Leak & Pipe Fixes -->
+          <article class="service-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="plumbing">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-xs uppercase tracking-wider text-secondary font-bold">Plumbing</span>
+                    <h2 class="font-headline-sm text-lg font-bold text-on-background">Plumber - Leak &amp; Pipe Fixes</h2>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-label-sm text-xs text-on-surface-variant block">Starts at</span>
+                  <span class="font-headline-md text-xl text-secondary font-bold leading-none">$25</span>
+                </div>
+              </div>
+              <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Fix leaking faucets, unclog sinks, toilet repairs, and shower installations.
+              </p>
+              <div class="bg-surface-container-low rounded-xl p-3 mb-4 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-on-surface">
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Quick leakage check</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Spare parts ready</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Clean finish</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-surface-container mt-auto">
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary">thumb_up</span>
+                <span class="font-label-sm text-xs">Top Rated Choice</span>
+              </div>
+              <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-semibold active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="openBookingWithService('Plumber', '25.00')">
+                <span>Book Now</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Home Deep Cleaning -->
+          <article class="service-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="cleaning">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-xs uppercase tracking-wider text-secondary font-bold">Sanitization</span>
+                    <h2 class="font-headline-sm text-lg font-bold text-on-background">Home Deep Cleaning</h2>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-label-sm text-xs text-on-surface-variant block">Starts at</span>
+                  <span class="font-headline-md text-xl text-secondary font-bold leading-none">$39</span>
+                </div>
+              </div>
+              <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Full apartment or room scrubbing, dusting, window buffing, and disinfectant floor wash.
+              </p>
+              <div class="bg-surface-container-low rounded-xl p-3 mb-4 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-on-surface">
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Eco-friendly chemicals</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Kitchen &amp; bath focus</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>2-3 hours</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-surface-container mt-auto">
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+                <span class="font-label-sm text-xs">Safe for Pets &amp; Kids</span>
+              </div>
+              <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-semibold active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="openBookingWithService('Home Cleaning', '39.00')">
+                <span>Book Now</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Appliance Installation -->
+          <article class="service-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="appliance">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-tertiary-container flex items-center justify-center shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]">build</span>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-xs uppercase tracking-wider text-on-tertiary-fixed-variant font-bold">Major Appliances</span>
+                    <h2 class="font-headline-sm text-lg font-bold text-on-background">Appliance Installation</h2>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-label-sm text-xs text-on-surface-variant block">Starts at</span>
+                  <span class="font-headline-md text-xl text-secondary font-bold leading-none">$35</span>
+                </div>
+              </div>
+              <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Washing machine, water purifier (RO), and AC unmounting/mounting assistance.
+              </p>
+              <div class="bg-surface-container-low rounded-xl p-3 mb-4 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-on-surface">
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Certified technicians</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Safe power testing</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-surface-container mt-auto">
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                <span class="font-label-sm text-xs">OEM Standard</span>
+              </div>
+              <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-semibold active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="openBookingWithService('Appliance Repair', '35.00')">
+                <span>Book Now</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5: Emergency Electrical Triage -->
+          <article class="service-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="electrical">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]">fmd_bad</span>
+                  </div>
+                  <div>
+                    <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-xs mb-0.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                      <span>Fast Express</span>
+                    </div>
+                    <h2 class="font-headline-sm text-lg font-bold text-on-background">Emergency Electrical Triage</h2>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-label-sm text-xs text-on-surface-variant block">Starts at</span>
+                  <span class="font-headline-md text-xl text-error font-bold leading-none">$45</span>
+                </div>
+              </div>
+              <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Urgent power outage and burnt wire replacement within 45 minutes.
+              </p>
+              <div class="bg-surface-container-low rounded-xl p-3 mb-4 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-on-surface">
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  <span>Priority dispatch</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  <span>High safety gear</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-surface-container mt-auto">
+              <div class="flex items-center gap-1.5 text-error font-medium">
+                <span class="material-symbols-outlined text-[16px]">bolt</span>
+                <span class="font-label-sm text-xs">Instant Crew Ready</span>
+              </div>
+              <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-semibold active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="openBookingWithService('Electrician', '45.00')">
+                <span>Book Now</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 6: Kitchen Deep Sanitization & Venting -->
+          <article class="service-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="cleaning">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center shadow-sm">
+                    <span class="material-symbols-outlined text-[26px]">countertops</span>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-xs uppercase tracking-wider text-secondary font-bold">Specialist Care</span>
+                    <h2 class="font-headline-sm text-lg font-bold text-on-background">Kitchen &amp; Vent Scrub</h2>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-label-sm text-xs text-on-surface-variant block">Starts at</span>
+                  <span class="font-headline-md text-xl text-secondary font-bold leading-none">$32</span>
+                </div>
+              </div>
+              <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
+                Degreasing exhaust fans, cooktop scrub, countertop sterilization, and cabinet surface polish.
+              </p>
+              <div class="bg-surface-container-low rounded-xl p-3 mb-4 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-on-surface">
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Food-safe degreasers</span>
+                </div>
+                <div class="flex items-center gap-1 font-body-sm text-xs">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Stainless steel polish</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-surface-container mt-auto">
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary">clean_hands</span>
+                <span class="font-label-sm text-xs">High Hygiene</span>
+              </div>
+              <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-semibold active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="openBookingWithService('Home Cleaning', '32.00')">
+                <span>Book Now</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Trust & Guarantee (Responsive 2-Col on Desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+          <!-- Verified Specialists Card -->
+          <div class="bg-surface-container-low rounded-2xl p-6 flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm">
+              <img class="w-full h-full object-cover" alt="Verified technician" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlcLaWmJNO9dsVju6ooSsEkh3UpcPuOskKVLltsHJHenJ7bU79VselUT3praklS4hZ3IqjnbgtBX3TMbGSotNRL1FY2yeGrsgMTvM3da_JtABXqWEU3PcyTv2xk3R6pWtC1XE-mAy6iHKAsKDONbaJwj1sklu8AQMOXjhhxqTjU-6_VocDBPeL-NZ9u1lJnRC-TiXkZJDRsTwfCzAWFiPFOKs36GSln9pHCx8uMBfAneZ660PyhiP"/>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+                <span class="font-label-md text-base text-on-surface font-bold">1,400+ Verified Specialists</span>
+              </div>
+              <p class="font-body-sm text-sm text-on-surface-variant mt-1 leading-relaxed">
+                All technicians undergo mandatory background screenings, licensing reviews, and identity checks.
+              </p>
+            </div>
+          </div>
+
+          <!-- 100% Satisfaction Guarantee Banner -->
+          <div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-headline-sm text-base font-bold text-on-background">100% Satisfaction Guarantee</h3>
+              <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mt-1">
+                Not happy? We will make it right free of cost. If any issue arises within 30 days of service completion, our team returns at no extra charge.
+              </p>
+              <div class="mt-2.5 flex items-center gap-4 text-secondary font-label-sm text-xs font-semibold">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Zero Re-visit Fee</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Instant Redo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================== -->
+      <!-- SCREEN 3: BOOK A SERVICE (Responsive 2-Col on Desktop) -->
+      <!-- ============================================================== -->
+      <section id="screen-book" class="screen-view hidden flex flex-col w-full space-y-6">
+        
+        <!-- Header Step Indicator -->
+        <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="font-headline-sm text-xl font-bold text-on-surface">Book a Professional Technician</h2>
+            <span class="font-label-md text-xs text-secondary bg-secondary-container/40 px-3 py-1 rounded-full font-semibold">Step 1 of 2: Details</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-xs font-bold">1</div>
+              <span class="font-label-md text-sm font-semibold text-on-surface">Details &amp; Schedule</span>
+            </div>
+            <div class="flex-1 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+              <div class="h-full bg-secondary w-1/2 rounded-full"></div>
+            </div>
+            <div class="flex items-center gap-2 opacity-50">
+              <div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-sm text-xs">2</div>
+              <span class="font-label-md text-sm text-on-surface-variant">Review &amp; Confirm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2-Column Responsive Desktop Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- LEFT COLUMN: Booking Form Steps (8 Cols on Desktop) -->
+          <div class="lg:col-span-7 xl:col-span-8 bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-sm space-y-6">
+            
+            <!-- 1. Service Category Selection -->
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <label class="font-label-lg text-base font-bold text-on-surface">1. Choose Service Category</label>
+                <span class="font-label-sm text-xs text-secondary font-semibold">Verified Pros Available</span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="booking-service-options">
+                <button class="booking-service-chip relative text-left p-4 rounded-xl bg-surface-container-low transition-all duration-200 ring-2 ring-secondary" data-service="Electrician" data-price="29.00" onclick="selectBookingCategory(this, 'Electrician', '29.00')" type="button">
+                  <div class="absolute top-2.5 right-2.5 text-secondary service-check">
+                    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[28px] text-secondary mb-1">bolt</span>
+                  <div class="font-label-lg text-sm font-bold text-on-surface">Electrician</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant mt-0.5">From <span class="font-headline-sm text-secondary font-bold chip-price">$29</span></div>
+                </button>
+
+                <button class="booking-service-chip relative text-left p-4 rounded-xl bg-surface-container-low transition-all duration-200" data-service="Plumber" data-price="25.00" onclick="selectBookingCategory(this, 'Plumber', '25.00')" type="button">
+                  <div class="absolute top-2.5 right-2.5 text-secondary service-check hidden">
+                    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[28px] text-on-surface-variant mb-1">plumbing</span>
+                  <div class="font-label-lg text-sm font-bold text-on-surface">Plumber</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant mt-0.5">From <span class="font-headline-sm text-on-surface font-bold chip-price">$25</span></div>
+                </button>
+
+                <button class="booking-service-chip relative text-left p-4 rounded-xl bg-surface-container-low transition-all duration-200" data-service="Home Cleaning" data-price="39.00" onclick="selectBookingCategory(this, 'Home Cleaning', '39.00')" type="button">
+                  <div class="absolute top-2.5 right-2.5 text-secondary service-check hidden">
+                    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[28px] text-on-surface-variant mb-1">cleaning_services</span>
+                  <div class="font-label-lg text-sm font-bold text-on-surface">Home Cleaning</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant mt-0.5">From <span class="font-headline-sm text-on-surface font-bold chip-price">$39</span></div>
+                </button>
+
+                <button class="booking-service-chip relative text-left p-4 rounded-xl bg-surface-container-low transition-all duration-200" data-service="Appliance Repair" data-price="35.00" onclick="selectBookingCategory(this, 'Appliance Repair', '35.00')" type="button">
+                  <div class="absolute top-2.5 right-2.5 text-secondary service-check hidden">
+                    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[28px] text-on-surface-variant mb-1">microwave</span>
+                  <div class="font-label-lg text-sm font-bold text-on-surface">Appliance Repair</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant mt-0.5">From <span class="font-headline-sm text-on-surface font-bold chip-price">$35</span></div>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Address -->
+            <div>
+              <label class="font-label-lg text-base font-bold text-on-surface block mb-2">2. Service Address</label>
+              <div class="space-y-3">
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute top-3.5 left-3.5 text-on-surface-variant text-[20px]">home_pin</span>
+                  <textarea id="booking-address" class="w-full bg-surface-container-low pl-11 pr-4 py-3 rounded-xl font-body-md text-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all resize-none" placeholder="House/Flat No., Street, Landmark" rows="2">Apt 4B, Greenwood Heights, College Road</textarea>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <span class="font-label-sm text-xs text-on-surface-variant block mb-1 font-semibold">City</span>
+                    <input id="booking-city" class="w-full bg-surface-container-low px-4 py-2.5 rounded-xl font-body-md text-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" type="text" value="Springfield"/>
+                  </div>
+                  <div>
+                    <span class="font-label-sm text-xs text-on-surface-variant block mb-1 font-semibold">Zip Code</span>
+                    <input id="booking-zip" class="w-full bg-surface-container-low px-4 py-2.5 rounded-xl font-body-md text-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all" type="text" value="97477"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Preferred Date -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label class="font-label-lg text-base font-bold text-on-surface">3. Preferred Date</label>
+                <span class="font-label-sm text-xs text-secondary flex items-center gap-1 font-semibold">
+                  <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                  Available for dispatch
+                </span>
+              </div>
+              <div class="flex gap-2 sm:gap-3 mb-3">
+                <button class="booking-date-chip flex-1 py-2 px-3 rounded-xl bg-surface-container-low text-center font-label-sm text-xs text-on-surface-variant transition-all hover:bg-surface-container font-semibold" onclick="setBookingDate(this, 'Today, Oct 24, 2026')" type="button">Today</button>
+                <button class="booking-date-chip flex-1 py-2 px-3 rounded-xl bg-secondary text-on-secondary text-center font-label-sm text-xs transition-all font-semibold" onclick="setBookingDate(this, 'Tomorrow, Oct 25, 2026')" type="button">Tomorrow</button>
+                <button class="booking-date-chip flex-1 py-2 px-3 rounded-xl bg-surface-container-low text-center font-label-sm text-xs text-on-surface-variant transition-all hover:bg-surface-container font-semibold" onclick="setBookingDate(this, 'This Weekend, Oct 26, 2026')" type="button">This Weekend</button>
+              </div>
+              <div class="flex items-center justify-between bg-surface-container-low px-4 py-3 rounded-xl">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-secondary text-[24px]">event</span>
+                  <div>
+                    <span class="font-label-sm text-xs text-on-surface-variant block">Selected Date</span>
+                    <span class="font-label-lg text-sm text-on-surface font-bold" id="booking-display-date">Tomorrow, Oct 25, 2026</span>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined text-on-surface-variant text-[20px]">edit_calendar</span>
+              </div>
+            </div>
+
+            <!-- 4. Preferred Time Slot -->
+            <div>
+              <label class="font-label-lg text-base font-bold text-on-surface block mb-2">4. Preferred Time Slot</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="time-slots">
+                <label class="booking-time-slot flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low cursor-pointer ring-1 ring-secondary/50 transition-all">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">wb_sunny</span>
+                    <div>
+                      <div class="font-label-lg text-sm font-bold text-on-surface">Morning</div>
+                      <div class="font-body-sm text-xs text-on-surface-variant">09:00 AM - 12:00 PM</div>
+                    </div>
+                  </div>
+                  <input checked="" class="accent-secondary h-4 w-4" name="timeslot" onchange="updateBookingTimeSlot()" type="radio" value="Morning (09:00 AM - 12:00 PM)"/>
+                </label>
+                <label class="booking-time-slot flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low cursor-pointer transition-all">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-on-surface-variant text-[22px]">light_mode</span>
+                    <div>
+                      <div class="font-label-lg text-sm font-bold text-on-surface">Afternoon</div>
+                      <div class="font-body-sm text-xs text-on-surface-variant">12:00 PM - 03:00 PM</div>
+                    </div>
+                  </div>
+                  <input class="accent-secondary h-4 w-4" name="timeslot" onchange="updateBookingTimeSlot()" type="radio" value="Afternoon (12:00 PM - 03:00 PM)"/>
+                </label>
+                <label class="booking-time-slot flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low cursor-pointer transition-all">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-on-surface-variant text-[22px]">bedtime</span>
+                    <div>
+                      <div class="font-label-lg text-sm font-bold text-on-surface">Evening</div>
+                      <div class="font-body-sm text-xs text-on-surface-variant">03:00 PM - 06:00 PM</div>
+                    </div>
+                  </div>
+                  <input class="accent-secondary h-4 w-4" name="timeslot" onchange="updateBookingTimeSlot()" type="radio" value="Evening (03:00 PM - 06:00 PM)"/>
+                </label>
+              </div>
+            </div>
+
+            <!-- 5. Issue Description -->
+            <div>
+              <label class="font-label-lg text-base font-bold text-on-surface block mb-2">5. Issue Description</label>
+              <textarea id="booking-issue" class="w-full bg-surface-container-low px-4 py-3 rounded-xl font-body-md text-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all resize-none" placeholder="Briefly describe the issue (e.g., Kitchen sink drainage clogged, water leaking under pipe)" rows="3">Kitchen sink drainage clogged, water leaking under pipe</textarea>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Payment Summary & Confirmation (4 Cols on Desktop, Sticky) -->
+          <div class="lg:col-span-5 xl:col-span-4 sticky top-24 space-y-6">
+            
+            <!-- Payment Summary Card -->
+            <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4 border border-surface-container">
+              <div class="flex items-center justify-between pb-2 border-b border-surface-container">
+                <span class="font-headline-sm text-lg font-bold text-on-surface">Payment Summary</span>
+                <span class="font-label-sm text-xs bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-semibold">Standard Rates</span>
+              </div>
+              <div class="space-y-2.5 pt-1">
+                <div class="flex justify-between items-center font-body-md text-sm text-on-surface-variant">
+                  <span id="booking-summary-label">Estimated Base Visit (Electrician)</span>
+                  <span class="font-label-lg text-base font-bold text-on-surface" id="booking-summary-base-price">$29.00</span>
+                </div>
+                <div class="flex justify-between items-center font-body-md text-sm text-on-surface-variant">
+                  <span>Inspection &amp; Safety Fee</span>
+                  <div class="flex items-center gap-1.5">
+                    <span class="line-through text-outline font-body-sm text-xs">$10.00</span>
+                    <span class="text-secondary font-label-md text-xs font-semibold">Waived ($0.00)</span>
+                  </div>
+                </div>
+                <div class="pt-2 mt-2 flex justify-between items-baseline bg-surface-container-low p-3.5 rounded-xl border border-surface-container">
+                  <div>
+                    <span class="font-headline-sm text-base font-bold text-on-surface block">Estimated Total</span>
+                    <span class="font-label-sm text-xs text-on-surface-variant">Pay safely after work is done</span>
+                  </div>
+                  <span class="font-headline-md text-2xl font-bold text-secondary" id="booking-summary-total-price">$29.00</span>
+                </div>
+              </div>
+              <div class="bg-secondary-container/30 p-3.5 rounded-xl flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">verified_user</span>
+                <p class="font-body-sm text-xs text-on-secondary-container leading-relaxed">
+                  <strong>No advance payment required.</strong> Inspect the completed repair first, then pay directly to your technician via card, tap, or cash.
+                </p>
+              </div>
+
+              <!-- CTA Button -->
+              <div class="pt-2">
+                <button class="w-full bg-secondary hover:bg-on-secondary-fixed-variant active:scale-[0.99] text-on-secondary py-3.5 px-4 rounded-xl font-label-lg text-base font-bold shadow-md flex items-center justify-center gap-2 transition-all duration-150" onclick="handleBookingConfirmation()" type="button">
+                  <span class="material-symbols-outlined text-[20px]">lock</span>
+                  <span>Confirm Booking Request</span>
+                </button>
+                <div class="flex items-center justify-center gap-1.5 mt-2.5 font-label-sm text-xs text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+                  <span>Free cancellations up to 2 hours before visit</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Need Assistance Card -->
+            <div class="bg-surface-container-low rounded-2xl p-5 border border-surface-container flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+                <span class="material-symbols-outlined">support_agent</span>
+              </div>
+              <div>
+                <p class="font-label-md text-sm font-bold text-on-surface">Need custom arrangements?</p>
+                <p class="font-body-sm text-xs text-on-surface-variant">Our concierge is available 24/7 for urgent campus repairs.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================== -->
+      <!-- SCREEN 4: CUSTOMER DASHBOARD (homeease_customer_dashboard) -->
+      <!-- ============================================================== -->
+      <section id="screen-customer-dashboard" class="screen-view hidden flex flex-col w-full space-y-6">
+        
+        <!-- Customer Profile Summary Banner (Full width on desktop) -->
+        <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="relative flex-shrink-0">
+              <img class="w-16 h-16 rounded-full object-cover shadow-sm ring-2 ring-secondary-container" alt="Customer Alex profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGsnx4Tzx7H-O5aqk8CnGYORcnwKdrpdpa_IDPOMDGh5su9VEC6JyIV9ag_kDxwbKU-Nc-WiJADAevyxYUueoatC7oR5CqhEiryElly5tAV-e4bS9Q9f8czouDbF4oTmFrE6qV4RAMNGkOoWcLHzaVnRnKjH2zGxJUFegP4ABz0CJHtvrm1DM7tuvw0JQaTMgH2dogdK7V9rUfDCamSZHopSszTZblNuznyzk3pDwaK1bExVcxAr0V"/>
+              <span class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full flex items-center justify-center ring-2 ring-white">
+                <span class="material-symbols-outlined text-[10px] text-on-secondary" style="font-variation-settings: 'FILL' 1;">check</span>
+              </span>
+            </div>
+            <div class="min-w-0">
+              <h1 class="font-headline-sm text-2xl font-bold text-on-surface truncate" id="customer-greeting">Welcome back, Alex!</h1>
+              <p class="font-body-sm text-sm text-on-surface-variant flex items-center gap-1 mt-1">
+                <span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                <span id="customer-address-badge">Greenwood Heights, Apt 4B • Campus Area</span>
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="bg-surface-container-high rounded-xl px-4 py-2 text-center">
+              <span class="font-headline-sm text-xl font-bold text-on-surface leading-none block" id="customer-active-count">2</span>
+              <span class="font-label-sm text-xs text-on-surface-variant uppercase tracking-wider block mt-0.5">Active</span>
+            </div>
+            <button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary font-label-md text-sm font-semibold hover:opacity-95 shadow-sm flex items-center gap-1.5" onclick="navigateTo('book')">
+              <span class="material-symbols-outlined text-[18px]">add</span>
+              <span>New Booking</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div>
+          <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1" id="customer-filter-bar" role="tablist">
+            <button class="customer-filter-tab px-4 py-2 rounded-full font-label-md text-sm bg-inverse-surface text-inverse-on-surface shadow-sm transition-all" data-target="all" onclick="filterCustomerBookings('all', this)">
+              All Bookings (<span id="all-bookings-count">4</span>)
+            </button>
+            <button class="customer-filter-tab px-4 py-2 rounded-full font-label-md text-sm bg-surface-container text-on-surface-variant shadow-sm transition-all" data-target="accepted" onclick="filterCustomerBookings('accepted', this)">
+              Accepted (1)
+            </button>
+            <button class="customer-filter-tab px-4 py-2 rounded-full font-label-md text-sm bg-surface-container text-on-surface-variant shadow-sm transition-all" data-target="pending" onclick="filterCustomerBookings('pending', this)">
+              Pending (<span id="pending-count">1</span>)
+            </button>
+            <button class="customer-filter-tab px-4 py-2 rounded-full font-label-md text-sm bg-surface-container text-on-surface-variant shadow-sm transition-all" data-target="completed" onclick="filterCustomerBookings('completed', this)">
+              Completed (2)
+            </button>
+          </div>
+        </div>
+
+        <!-- Section 1: Upcoming & In-Progress Bookings (Responsive 2-Col on Desktop) -->
+        <section class="space-y-4" id="upcoming-section">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+              <h2 class="font-headline-sm text-xl font-bold text-on-surface">Upcoming &amp; In-Progress</h2>
+            </div>
+            <span class="bg-secondary-container text-on-secondary-container font-label-sm text-xs px-2.5 py-0.5 rounded-full font-semibold" id="upcoming-badge">2 Scheduled</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="upcoming-bookings-list">
+            <!-- Card 1: Accepted Plumber Booking -->
+            <article class="booking-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between gap-4 transition-transform duration-200 border border-surface-container" data-status="accepted">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-3">
+                  <div class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    <span>Accepted</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-headline-md text-xl text-secondary font-bold">$25</span>
+                    <span class="font-label-sm text-xs text-on-surface-variant block -mt-0.5">Est. total</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 rounded-xl bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+                    <img class="w-full h-full object-cover" alt="Plumbing repair tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX-iuipy3ibcWNgJLOcHyROpcd9cSqNNUNOMJIcFvwCQ1cLsdt2l1v5Iqwflzek-zDYmxIDY9kHpTIAWoFPdJZBWsMuG4qq75DZ0lOEMUSqwGDgh71bczoaoNbFAbrKKkn35YJd8G_ezyy8sJeYsQqwH7ap9R7fqRhg1vVpkMd1g-28Xpgu56EVw4TKHJCNlHWDmdcRqvIjP_bHHwjPukPWdhEQMCgoooQRTO6KGqL0segZ7hzWMa6"/>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <span class="font-label-sm text-xs text-secondary uppercase font-bold tracking-wide">Plumbing Repair</span>
+                    <h3 class="font-headline-sm text-base font-bold text-on-surface truncate">Kitchen Sink Leak &amp; Pipe Seal</h3>
+                    <p class="font-body-sm text-sm text-on-surface-variant truncate">Standard diagnostic + seal ring replacement</p>
+                  </div>
+                </div>
+                
+                <!-- Assigned Pro Card -->
+                <div class="bg-surface-container-low rounded-xl p-3 mt-3 flex items-center justify-between gap-3">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <img class="w-9 h-9 rounded-full object-cover flex-shrink-0" alt="David Miller plumber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHRRN9mSMzKHVh3CyDclZZDV63zW8Ow-6J2fdwTzUi7MHiL3mzUblMSAEEV8XUdOMRh_vI20COFKtF94D09i05miJBXK_f7F-4ayP3o0-H_FniGPcIrDKhBjKRc45ySOVHoN8gAWYF0qhRQsIibWKGCnEn8vbE3z1oKfbE1mxmDTq_v6zDV8Xh47W4Q80BlEV3o0Uw9_IJBli1TXLRo7uI913Fih7FNHkvfmiAP0VAYDEXfbLiIwQK"/>
+                    <div class="min-w-0">
+                      <div class="flex items-center gap-1">
+                        <span class="font-label-md text-sm font-bold text-on-surface truncate">David Miller</span>
+                        <span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                      </div>
+                      <span class="font-body-sm text-xs text-on-surface-variant block truncate">Certified Plumber • 4.9 ★ (142 reviews)</span>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded font-label-sm text-xs text-secondary font-bold shadow-sm">
+                    <span class="material-symbols-outlined text-[12px] text-secondary">verified_user</span> Pro
+                  </span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 py-2 text-xs">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">event</span>
+                    <div class="min-w-0">
+                      <span class="text-on-surface-variant block">Schedule</span>
+                      <span class="font-bold text-on-surface truncate block">Tomorrow, Oct 25 • 10:00 AM</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span>
+                    <div class="min-w-0">
+                      <span class="text-on-surface-variant block">Service Spot</span>
+                      <span class="font-bold text-on-surface truncate block">Greenwood Hts • Apt 4B</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 pt-2 border-t border-surface-container">
+                <button class="flex-1 h-10 bg-secondary text-on-secondary rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="showToast('Calling Provider David Miller: +1 (555) 019-2831', 'call')">
+                  <span class="material-symbols-outlined text-[18px]">call</span>
+                  <span>Call Provider</span>
+                </button>
+                <button class="flex-1 h-10 bg-surface-container text-on-surface rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="openDetailsModal('Kitchen Sink Leak & Pipe Seal', 'David Miller (Certified Plumber)', '$25.00 Est.', 'Tomorrow at 10:00 AM')" type="button">
+                  <span class="material-symbols-outlined text-[18px]">info</span>
+                  <span>View Details</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 2: Pending Electrician Booking -->
+            <article class="booking-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between gap-4 transition-transform duration-200 border border-surface-container" data-status="pending" id="pending-booking-card">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-3">
+                  <div class="inline-flex items-center gap-1.5 bg-[#FEF3C7] text-[#B45309] px-3 py-1 rounded-full font-label-sm text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                    <span>Pending Provider</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-headline-md text-xl text-on-surface font-bold">$29</span>
+                    <span class="font-label-sm text-xs text-on-surface-variant block -mt-0.5">Est. total</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 rounded-xl bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+                    <img class="w-full h-full object-cover" alt="Switchboard diagnostic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjnP-Zyi1xl9mzX4eLJB1_x7YWwfd_vfB1BSfXzGlEJ-qYPQExE9QPjtGvW91Rc1ze6V1bZB-dmLBAlQA3hfOfPjOdtLjIxUFi3NXsy1Bt-ZVtN47U6WypltKhinEgXbG8hKv5jPHs2dV_rWy4JjojmQ-vVkWTdDtV7ST6x1r8CC4ewGWDq08IzxUktuQIqwYO81vawJsPhVrEKkTV4Oom92MChAN-JZurtcDcI4QljnG32oWgFIy8"/>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <span class="font-label-sm text-xs text-[#B45309] uppercase font-bold tracking-wide">Electrical Safety</span>
+                    <h3 class="font-headline-sm text-base font-bold text-on-surface truncate">Switchboard Sparking Diagnostic</h3>
+                    <p class="font-body-sm text-sm text-on-surface-variant truncate">Master bedroom board • Urgent check</p>
+                  </div>
+                </div>
+                <div class="bg-[#FFFBEB] rounded-xl p-3 mt-3 flex items-center gap-3">
+                  <div class="relative flex items-center justify-center w-6 h-6 flex-shrink-0">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F59E0B] opacity-30"></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-[#F59E0B] text-white items-center justify-center">
+                      <span class="material-symbols-outlined text-[10px]">radar</span>
+                    </span>
+                  </div>
+                  <p class="font-body-sm text-xs text-[#92400E] leading-snug">
+                    Finding nearest certified electrician in your area. Matches typically take under 15 mins.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-3 py-2 text-xs">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-outline text-[18px]">calendar_clock</span>
+                    <div class="min-w-0">
+                      <span class="text-on-surface-variant block">Requested Slot</span>
+                      <span class="font-bold text-on-surface truncate block">Friday, Oct 25 • 02:00 PM</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-outline text-[18px]">home_pin</span>
+                    <div class="min-w-0">
+                      <span class="text-on-surface-variant block">Location</span>
+                      <span class="font-bold text-on-surface truncate block">Greenwood Hts • Apt 4B</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 pt-2 border-t border-surface-container">
+                <button class="flex-1 h-10 bg-error-container text-error rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="confirmCancelBooking(this)" type="button">
+                  <span class="material-symbols-outlined text-[18px]">cancel</span>
+                  <span>Cancel Request</span>
+                </button>
+                <button class="flex-1 h-10 bg-surface-container text-on-surface rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="showToast('Edit mode opened for requested time slot.', 'edit_calendar')" type="button">
+                  <span class="material-symbols-outlined text-[18px]">edit_note</span>
+                  <span>Edit Details</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section 2: Previous Bookings (Completed) -->
+        <section class="space-y-4 pt-4" id="completed-section">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">history</span>
+              <h2 class="font-headline-sm text-xl font-bold text-on-surface">Previous Bookings</h2>
+            </div>
+            <span class="font-label-sm text-sm text-on-surface-variant">2 Completed</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Completed Card 1 -->
+            <article class="booking-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between gap-4 transition-transform duration-200 border border-surface-container" data-status="completed">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-3">
+                  <div class="inline-flex items-center gap-1.5 bg-[#D1FAE5] text-[#047857] px-3 py-1 rounded-full font-label-sm text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[14px]">task_alt</span>
+                    <span>Completed</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-headline-md text-xl text-on-surface font-bold">$39.00</span>
+                    <span class="font-label-sm text-xs text-[#047857] flex items-center justify-end gap-0.5">
+                      <span class="material-symbols-outlined text-[12px]">check</span> Paid
+                    </span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 rounded-xl bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+                    <img class="w-full h-full object-cover" alt="Completed cleaning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnVQiW27Y8DrfUaqgutYRdjyHV2N4v3zUp_W6bGB_gRzw7jepbBPWOQVHJCrkeQq7p8d5jIHjawWDXp_ydUv2AxMBL__Kb8fZW0nhZrEXpnp1JfLobUEfLtvctEW0hBLaWVXOzyOHDPntjQm0U6_Q_y2zQb49br2mo9mju4T5INuCalpxUbHQu5AUas5IXs7JM04C30MIfKNHu7GdQ4ashcSOZoEAa1YviqVxWuvs00_-u6fsCbo0-"/>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <span class="font-label-sm text-xs text-[#047857] uppercase font-bold tracking-wide">Housekeeping</span>
+                    <h3 class="font-headline-sm text-base font-bold text-on-surface truncate">Home Deep Cleaning - 2BHK</h3>
+                    <p class="font-body-sm text-sm text-on-surface-variant">Completed on Oct 15, 2026</p>
+                  </div>
+                </div>
+                <div class="bg-surface-container-low rounded-xl p-3 mt-3 flex items-center justify-between">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-xs font-bold">
+                      ER
+                    </div>
+                    <div class="min-w-0">
+                      <span class="font-label-md text-sm font-bold text-on-surface truncate block">Elena Rostova</span>
+                      <span class="font-body-sm text-xs text-on-surface-variant block">HomeEase Pro Partner</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-0.5 text-[#F59E0B]">
+                    <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 pt-2 border-t border-surface-container">
+                <button class="flex-1 h-10 bg-secondary text-on-secondary rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="openBookingWithService('Home Cleaning', '39.00')" type="button">
+                  <span class="material-symbols-outlined text-[18px]">replay</span>
+                  <span>Book Again</span>
+                </button>
+                <button class="flex-1 h-10 bg-surface-container text-on-surface rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="showToast('Receipt #REC-9942 downloaded to your device.', 'download_done')" type="button">
+                  <span class="material-symbols-outlined text-[18px]">download</span>
+                  <span>Receipt</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Completed Card 2 -->
+            <article class="booking-card bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col justify-between gap-4 transition-transform duration-200 border border-surface-container" data-status="completed">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-3">
+                  <div class="inline-flex items-center gap-1.5 bg-[#D1FAE5] text-[#047857] px-3 py-1 rounded-full font-label-sm text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[14px]">task_alt</span>
+                    <span>Completed</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-headline-md text-xl text-on-surface font-bold">$45.00</span>
+                    <span class="font-label-sm text-xs text-[#047857] flex items-center justify-end gap-0.5">
+                      <span class="material-symbols-outlined text-[12px]">check</span> Paid
+                    </span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 rounded-xl bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+                    <img class="w-full h-full object-cover" alt="Air conditioner service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjcMYriarGYo6c1-nLJX3ivJrRnBp9Z66FKHhIaxicfHdMpd2mNqDYbsT9S0BYqlZE1EznITbqisAPBCjjBaAnzKxpMY5f_diOEGLYLcTNc7M4a0kSaoy0d93RctLkMthtIjS47EjhFixWzoqrgTpcW7BK-x6kTyfJ-x6B-55_py_jijPtSdi4BYa-moEdsSjOKBvsr3GZVGgK1IPARJj7DaSWehvqX6GRnw7Mye3nKYpyxfO1qvsT"/>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <span class="font-label-sm text-xs text-[#047857] uppercase font-bold tracking-wide">HVAC Service</span>
+                    <h3 class="font-headline-sm text-base font-bold text-on-surface truncate">AC Filter &amp; Coolant Tune-up</h3>
+                    <p class="font-body-sm text-sm text-on-surface-variant">Completed on Sep 28, 2026</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 pt-2 border-t border-surface-container">
+                <button class="flex-1 h-10 bg-secondary text-on-secondary rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="openBookingWithService('Appliance Repair', '45.00')" type="button">
+                  <span class="material-symbols-outlined text-[18px]">replay</span>
+                  <span>Book Again</span>
+                </button>
+                <button class="flex-1 h-10 bg-surface-container text-on-surface rounded-xl font-label-lg text-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="showToast('Receipt #REC-8812 downloaded to your device.', 'download_done')" type="button">
+                  <span class="material-symbols-outlined text-[18px]">download</span>
+                  <span>Receipt</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Empty Filter State -->
+        <div class="hidden bg-surface-container-lowest rounded-2xl p-10 text-center flex-col items-center justify-center gap-4 shadow-sm border border-surface-container" id="customer-empty-state">
+          <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+            <span class="material-symbols-outlined text-[32px]">folder_off</span>
+          </div>
+          <h3 class="font-headline-sm text-xl font-bold text-on-surface">No bookings in this tab</h3>
+          <p class="font-body-sm text-sm text-on-surface-variant max-w-sm">All caught up! Check other tabs or schedule a brand new home service whenever you are ready.</p>
+          <button class="px-6 py-2.5 bg-secondary text-on-secondary rounded-xl font-label-md text-sm font-semibold" onclick="filterCustomerBookings('all', document.querySelector('[data-target=all]'))">
+            View All Bookings
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================================== -->
+      <!-- SCREEN 5: PROVIDER DASHBOARD (homeease_provider_dashboard) -->
+      <!-- ============================================================== -->
+      <section id="screen-provider-dashboard" class="screen-view hidden flex flex-col w-full space-y-6">
+        
+        <!-- Provider Profile Card & Status Switch -->
+        <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4 border border-surface-container">
+          <div class="flex items-center gap-4 min-w-0">
+            <div class="relative flex-shrink-0">
+              <img class="w-16 h-16 rounded-full object-cover shadow-sm ring-2 ring-secondary-container" alt="Marcus Vance provider profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFGssBGPQoYGu8yTKep03zHzaj-MwbkZpiraB-27iT0AgkhNWZ7WOgfPNh6jYaxR1id_qkbeRheL5PA08bmzWu4ubsnNtqApnWYapZn2bXMe84ZwamOsXhnsdfK_v-ICh29o6_HAaq9AuP06-WBPNHxiInhSM37xghBNdrik9ot2g7bDuMlZyA92ULUhDQoKq7eDtNSJsp7lp-z4wvsF0nA11vFal2o-Ekh_iCiv20W2gcgTuQWKHD"/>
+              <span class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full ring-2 ring-white" id="provider-status-indicator"></span>
+            </div>
+            <div class="min-w-0">
+              <div class="flex items-center gap-1.5">
+                <span class="font-label-sm text-xs text-secondary uppercase tracking-wider font-bold">Provider Portal</span>
+                <span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+              </div>
+              <h1 class="font-headline-sm text-2xl font-bold text-on-surface truncate">Marcus Vance</h1>
+              <p class="font-body-sm text-sm text-on-surface-variant truncate">Certified Master Electrician • Lic #EC-4921</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-4">
+            <div class="bg-surface-container-low rounded-xl px-4 py-2.5 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px] text-secondary">radar</span>
+              <span class="font-label-sm text-xs text-on-surface font-semibold">Radius: 8 km</span>
+            </div>
+            <div class="flex flex-col items-end">
+              <label class="inline-flex items-center cursor-pointer select-none" for="provider-online-switch">
+                <input checked="" class="sr-only peer" id="provider-online-switch" type="checkbox" onchange="toggleProviderOnlineStatus(this)"/>
+                <div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary relative"></div>
+              </label>
+              <span class="font-label-sm text-xs text-secondary mt-1 font-bold" id="provider-status-text">Online &amp; Active</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 KPI Quick Stat Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex items-center gap-3 border border-surface-container">
+            <div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+              <span class="material-symbols-outlined text-[22px]">notifications_active</span>
+            </div>
+            <div class="min-w-0">
+              <p class="font-headline-sm text-2xl font-bold text-on-surface leading-tight" id="pro-stat-leads">3</p>
+              <p class="font-label-sm text-xs text-on-surface-variant truncate font-semibold">Available Leads</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex items-center gap-3 border border-surface-container">
+            <div class="w-11 h-11 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <span class="material-symbols-outlined text-[22px]">play_circle</span>
+            </div>
+            <div class="min-w-0">
+              <p class="font-headline-sm text-2xl font-bold text-on-secondary-container leading-tight" id="pro-stat-active">1</p>
+              <p class="font-label-sm text-xs text-on-surface-variant truncate font-semibold">Active Job</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex items-center gap-3 border border-surface-container">
+            <div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant">
+              <span class="material-symbols-outlined text-[22px]">task_alt</span>
+            </div>
+            <div class="min-w-0">
+              <p class="font-headline-sm text-2xl font-bold text-on-surface leading-tight" id="pro-stat-completed">18</p>
+              <p class="font-label-sm text-xs text-on-surface-variant truncate font-semibold">Completed</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex items-center gap-3 border border-surface-container">
+            <div class="w-11 h-11 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+              <span class="material-symbols-outlined text-[22px]">payments</span>
+            </div>
+            <div class="min-w-0">
+              <p class="font-headline-sm text-2xl font-bold text-secondary leading-tight" id="pro-stat-earnings">$540</p>
+              <p class="font-label-sm text-xs text-on-surface-variant truncate font-semibold">This Month</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two-Column Desktop Dashboard Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- LEFT COLUMN: Active Job In-Progress + Recent History (6 Cols) -->
+          <div class="lg:col-span-6 space-y-6">
+            
+            <!-- Section: Active Job In-Progress -->
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[22px]">handyman</span>
+                  <h2 class="font-headline-sm text-lg font-bold text-on-surface">Active Job In-Progress</h2>
+                </div>
+                <span class="bg-secondary-container text-on-secondary-container font-label-sm text-xs px-2.5 py-0.5 rounded-full font-semibold" id="pro-active-job-badge">1 Current</span>
+              </div>
+
+              <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4 border border-surface-container" id="active-job-card">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="min-w-0 space-y-1">
+                    <div class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container rounded-full px-2.5 py-0.5 font-label-sm text-xs font-semibold">
+                      <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                      Job In Progress
+                    </div>
+                    <h3 class="font-headline-sm text-lg font-bold text-on-surface">Switchboard Repair &amp; Socket Replacement</h3>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="font-headline-md text-2xl text-secondary font-bold">$45.00</span>
+                    <p class="font-label-sm text-xs text-on-surface-variant">Direct Pay</p>
+                  </div>
+                </div>
+
+                <!-- Customer Detail Row -->
+                <div class="bg-surface-container-low rounded-xl p-4 space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-sm text-on-surface font-bold flex-shrink-0">
+                        SJ
+                      </div>
+                      <div class="min-w-0">
+                        <p class="font-label-lg text-sm font-bold text-on-surface truncate">Sarah Jenkins</p>
+                        <p class="font-body-sm text-xs text-on-surface-variant truncate">Customer since 2022</p>
+                      </div>
+                    </div>
+                    <button aria-label="Call Sarah" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm active:scale-95 transition-transform" onclick="showToast('Calling Customer Sarah Jenkins: 555-234-8901', 'call')">
+                      <span class="material-symbols-outlined text-[18px]">phone</span>
+                    </button>
+                  </div>
+                  <div class="flex items-start gap-2 pt-1 text-on-surface-variant text-xs">
+                    <span class="material-symbols-outlined text-[16px] text-secondary flex-shrink-0 mt-0.5">location_on</span>
+                    <span class="font-semibold text-on-surface">12 Oak Ridge Lane, Apt 3</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-on-surface-variant text-xs">
+                    <span class="material-symbols-outlined text-[16px] text-secondary flex-shrink-0">schedule</span>
+                    <span class="font-bold text-on-surface">Today • 02:00 PM (Started 35m ago)</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-2 pt-1">
+                  <button class="w-full h-11 bg-secondary text-on-secondary rounded-xl font-label-lg text-sm font-bold flex items-center justify-center gap-2 shadow-sm active:opacity-90 transition-all" id="complete-job-btn" onclick="completeActiveJob()">
+                    <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                    <span>Mark as Completed</span>
+                  </button>
+                  <button class="w-full h-10 bg-surface-container text-on-surface rounded-xl font-label-md text-xs font-semibold flex items-center justify-center gap-1.5 active:bg-surface-container-high transition-colors" onclick="showToast('GPS routing to 12 Oak Ridge Lane, Apt 3', 'directions')">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant">directions</span>
+                    <span>Navigate to Location</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section: Recent Work History -->
+            <div class="space-y-3 pt-2">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-on-surface-variant text-[20px]">history</span>
+                  <h2 class="font-headline-sm text-lg font-bold text-on-surface">Recent Work</h2>
+                </div>
+                <button class="font-label-sm text-xs text-secondary font-semibold hover:underline" onclick="showToast('Showing all 18 historical job logs.', 'history')">View All 18</button>
+              </div>
+              <div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex items-center justify-between gap-4 border border-surface-container">
+                <div class="flex items-center gap-3.5 min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary flex-shrink-0">
+                    <span class="material-symbols-outlined text-[22px]">check_circle</span>
+                  </div>
+                  <div class="min-w-0">
+                    <p class="font-label-lg text-sm font-bold text-on-surface truncate">Kitchen Exhaust Wiring</p>
+                    <div class="flex items-center gap-2 text-on-surface-variant text-xs mt-0.5">
+                      <span>Oct 21</span>
+                      <span>•</span>
+                      <span class="text-secondary font-semibold">Completed &amp; Rated 5.0 ★</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span class="font-headline-sm text-base font-bold text-on-surface">$30.00</span>
+                  <span class="block font-label-sm text-xs text-secondary font-semibold">Paid</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: Available Job Requests (Leads) (6 Cols) -->
+          <div class="lg:col-span-6 space-y-6">
+            
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[22px]">bolt</span>
+                  <h2 class="font-headline-sm text-lg font-bold text-on-surface">Available Job Requests</h2>
+                </div>
+                <span class="font-label-sm text-xs text-on-surface-variant font-semibold">Live Backend Feed</span>
+              </div>
+
+              <div id="provider-leads-list" class="space-y-3">
+                <!-- Lead 1 -->
+              <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-3 border border-surface-container relative transition-all" id="lead-card-1">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="bg-error-container text-error font-label-sm text-xs px-2 py-0.5 rounded-full font-bold inline-flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[13px]">warning</span> Urgent
+                      </span>
+                      <span class="font-label-sm text-xs text-on-surface-variant font-medium">1.8 km away</span>
+                    </div>
+                    <h3 class="font-headline-sm text-base font-bold text-on-surface">Electrical Short Circuit</h3>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="font-headline-md text-xl text-secondary font-bold">$35.00</span>
+                    <p class="font-label-sm text-xs text-on-surface-variant">Est. Payout</p>
+                  </div>
+                </div>
+                <div class="space-y-2 bg-surface-container-low rounded-xl p-3.5 text-xs">
+                  <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">home_pin</span>
+                    <p class="font-semibold text-on-surface">74 Elm Street, Downtown, Springfield</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">schedule</span>
+                    <p class="font-bold text-secondary">Today • Immediate / 04:30 PM</p>
+                  </div>
+                  <div class="flex items-start gap-2 pt-0.5">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">info</span>
+                    <p class="text-on-surface-variant italic">"Main MCB keeps tripping whenever geyser is turned on. Need urgent inspection."</p>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 pt-1">
+                  <button class="h-10 bg-surface-container text-on-surface font-label-lg text-xs rounded-xl active:bg-surface-container-high transition-colors font-bold" onclick="declineLead('lead-card-1')">
+                    Decline
+                  </button>
+                  <button class="h-10 bg-secondary text-on-secondary font-label-lg text-xs rounded-xl shadow-sm active:opacity-90 transition-opacity font-bold flex items-center justify-center gap-1.5" onclick="acceptLead('lead-card-1', 'Electrical Short Circuit', '$35.00')">
+                    <span class="material-symbols-outlined text-[16px]">thumb_up</span>
+                    Accept
+                  </button>
+                </div>
+              </div>
+
+              <!-- Lead 2 -->
+              <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-3 border border-surface-container relative transition-all" id="lead-card-2">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="bg-surface-container-high text-on-surface font-label-sm text-xs px-2 py-0.5 rounded-full font-bold">
+                        Scheduled
+                      </span>
+                      <span class="font-label-sm text-xs text-on-surface-variant font-medium">3.2 km away</span>
+                    </div>
+                    <h3 class="font-headline-sm text-base font-bold text-on-surface">Ceiling Fan Installation &amp; Wiring</h3>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="font-headline-md text-xl text-secondary font-bold">$28.00</span>
+                    <p class="font-label-sm text-xs text-on-surface-variant">Est. Payout</p>
+                  </div>
+                </div>
+                <div class="space-y-2 bg-surface-container-low rounded-xl p-3.5 text-xs">
+                  <div class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">home_pin</span>
+                    <p class="font-semibold text-on-surface">College Hostel Block B, Room 204</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">calendar_month</span>
+                    <p class="font-bold text-on-surface">Tomorrow • 11:00 AM</p>
+                  </div>
+                  <div class="flex items-start gap-2 pt-0.5">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant flex-shrink-0">info</span>
+                    <p class="text-on-surface-variant italic">"New fan assembled, requires ceiling bracket drilling and switch hookup."</p>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 pt-1">
+                  <button class="h-10 bg-surface-container text-on-surface font-label-lg text-xs rounded-xl active:bg-surface-container-high transition-colors font-bold" onclick="declineLead('lead-card-2')">
+                    Decline
+                  </button>
+                  <button class="h-10 bg-secondary text-on-secondary font-label-lg text-xs rounded-xl shadow-sm active:opacity-90 transition-opacity font-bold flex items-center justify-center gap-1.5" onclick="acceptLead('lead-card-2', 'Ceiling Fan Installation &amp; Wiring', '$28.00')">
+                    <span class="material-symbols-outlined text-[16px]">thumb_up</span>
+                    Accept
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Pro Tip Card -->
+            <div class="bg-surface-container-high rounded-2xl p-5 flex items-center gap-3.5 border border-surface-container">
+              <div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[20px]">tips_and_updates</span>
+              </div>
+              <p class="font-body-sm text-xs text-on-surface leading-relaxed">
+                <strong class="font-bold">Quick Pro Tip:</strong> Customers rate verified providers 24% higher when arrival is communicated 10 minutes in advance.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================== -->
+      <!-- SCREEN 6: LOGIN / REGISTER (homeease_login_register) -->
+      <!-- ============================================================== -->
+      <section id="screen-login" class="screen-view hidden flex flex-col w-full max-w-lg mx-auto py-6">
+        
+        <!-- Back navigation button -->
+        <button class="self-start flex items-center gap-1.5 text-on-surface-variant hover:text-secondary mb-4 font-label-md text-sm font-semibold transition-colors" onclick="navigateTo('home')">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          <span>Back to Home</span>
+        </button>
+
+        <!-- Card Container -->
+        <div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-xl border border-surface-container space-y-6">
+          
+          <!-- Friendly Welcome Banner -->
+          <div class="relative overflow-hidden rounded-xl bg-surface-container p-4 shadow-sm">
+            <div class="relative z-10 flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container">
+                <span class="material-symbols-outlined text-[22px]">roofing</span>
+              </div>
+              <div>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-xs mb-1 font-semibold">
+                  <span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                  Verified Pros &amp; Care
+                </span>
+                <h2 class="font-headline-md text-xl font-bold text-on-surface" id="auth-title">Welcome Back to HomeEase</h2>
+                <p class="font-body-sm text-xs text-on-surface-variant mt-0.5" id="auth-subtitle">Access your service bookings and track verified pros.</p>
+              </div>
+            </div>
+            <div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-secondary-fixed/30 pointer-events-none"></div>
+          </div>
+
+          <!-- Academic Demo Credentials Banner -->
+          <div class="rounded-xl bg-surface-container-high p-4 shadow-sm flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1.5 text-on-surface">
+                <span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+                <span class="font-label-md text-xs font-bold">College Project Quick Demo</span>
+              </div>
+              <span class="font-label-sm text-xs text-on-secondary-container bg-secondary-container px-2 py-0.5 rounded-full font-semibold">1-Click Sign-in</span>
+            </div>
+            <p class="font-body-sm text-xs text-on-surface-variant">Tap below to test instant autofill profiles for evaluation showcase:</p>
+            <div class="grid grid-cols-2 gap-2 mt-1">
+              <button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-lowest text-on-surface text-xs font-bold shadow-sm active:scale-95 transition-all hover:bg-white" id="btn-demo-customer" type="button" onclick="loginDemo('customer')">
+                <span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+                <span>Customer Demo</span>
+              </button>
+              <button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-lowest text-on-surface text-xs font-bold shadow-sm active:scale-95 transition-all hover:bg-white" id="btn-demo-pro" type="button" onclick="loginDemo('provider')">
+                <span class="material-symbols-outlined text-[16px] text-secondary">handyman</span>
+                <span>Provider Demo</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Active Session Banner (visible when logged in) -->
+          <div id="logged-in-banner" class="hidden rounded-xl bg-secondary-container/20 p-4 border border-secondary/30 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-sm shrink-0" id="logged-in-avatar">
+                U
+              </div>
+              <div class="min-w-0">
+                <span class="font-label-sm text-xs text-secondary font-bold block" id="logged-in-role">CUSTOMER ACCOUNT</span>
+                <p class="font-label-md text-sm font-bold text-on-surface truncate" id="logged-in-name">User Name</p>
+                <p class="font-body-sm text-xs text-on-surface-variant truncate" id="logged-in-email">user@example.com</p>
+              </div>
+            </div>
+            <button type="button" onclick="handleLogout()" class="px-3 py-1.5 rounded-lg bg-error-container text-error font-label-sm text-xs font-bold hover:opacity-90 flex items-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-[16px]">logout</span>
+              <span>Sign Out</span>
+            </button>
+          </div>
+
+          <!-- Segmented Tab Switcher -->
+          <div class="p-1 rounded-xl bg-surface-container-high flex gap-1 shadow-inner">
+            <button class="flex-1 py-2.5 rounded-lg font-label-lg text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 bg-surface-container-lowest text-on-surface shadow-sm" id="tab-login" onclick="switchAuthMode('login')" type="button">
+              <span class="material-symbols-outlined text-[18px]">login</span>
+              <span>Log In</span>
+            </button>
+            <button class="flex-1 py-2.5 rounded-lg font-label-lg text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 bg-transparent text-on-surface-variant" id="tab-register" onclick="switchAuthMode('register')" type="button">
+              <span class="material-symbols-outlined text-[18px]">person_add</span>
+              <span>Create Account</span>
+            </button>
+          </div>
+
+          <!-- LOGIN FORM -->
+          <form class="flex flex-col gap-4" id="form-login" onsubmit="event.preventDefault(); handleLoginSubmit();">
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-md text-xs font-bold text-on-surface flex items-center justify-between" for="login-email">
+                <span>Email Address</span>
+                <span class="text-secondary font-label-sm text-xs flex items-center gap-0.5 font-semibold">
+                  <span class="material-symbols-outlined text-[14px]">shield</span> SSL Secure
+                </span>
+              </label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-[20px] text-on-surface-variant pointer-events-none">mail</span>
+                <input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-sm pl-11 pr-4 py-3 rounded-xl shadow-sm outline-none transition-all duration-200 focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" id="login-email" placeholder="e.g. alex@example.com" required="" type="email" value="alex@homeease.edu"/>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-md text-xs font-bold text-on-surface" for="login-password">Password</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-[20px] text-on-surface-variant pointer-events-none">lock</span>
+                <input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-sm pl-11 pr-11 py-3 rounded-xl shadow-sm outline-none transition-all duration-200 focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" id="login-password" placeholder="••••••••" required="" type="password" value="Password2026!"/>
+                <button class="absolute right-3 p-1 text-on-surface-variant hover:text-on-surface flex items-center" id="toggle-login-pass" onclick="togglePassVisibility('login-password', 'icon-login-eye')" type="button">
+                  <span class="material-symbols-outlined text-[20px]" id="icon-login-eye">visibility</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <label class="flex items-center gap-2 cursor-pointer select-none">
+                <input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" id="remember-me" type="checkbox"/>
+                <span class="font-body-sm text-xs text-on-surface font-semibold">Remember me</span>
+              </label>
+              <button class="font-label-sm text-xs text-secondary hover:underline font-semibold" onclick="showToast('Password reset link sent to demo account.', 'mail')" type="button">
+                Forgot Password?
+              </button>
+            </div>
+
+            <button class="w-full py-3.5 px-4 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-bold shadow-md active:scale-[0.99] transition-all flex items-center justify-center gap-2 mt-2 hover:bg-on-secondary-fixed-variant" id="btn-submit-login" type="submit">
+              <span>Log In to HomeEase</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+          </form>
+
+          <!-- REGISTER FORM -->
+          <form class="hidden flex flex-col gap-4" id="form-register" onsubmit="event.preventDefault(); handleRegisterSubmit();">
+            <div class="flex flex-col gap-1.5">
+              <span class="font-label-md text-xs font-bold text-on-surface">I want to join as</span>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all border border-secondary" id="label-role-customer">
+                  <input checked="" class="w-4 h-4 accent-secondary" name="account-type" type="radio" value="customer" onchange="syncRoleStyles()"/>
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-xs font-bold text-on-surface">Customer</span>
+                    <span class="font-body-sm text-xs text-on-surface-variant">Book home fixes</span>
+                  </div>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container shadow-sm cursor-pointer transition-all border border-transparent" id="label-role-provider">
+                  <input class="w-4 h-4 accent-secondary" name="account-type" type="radio" value="provider" onchange="syncRoleStyles()"/>
+                  <div class="flex flex-col">
+                    <span class="font-label-md text-xs font-bold text-on-surface">Service Pro</span>
+                    <span class="font-body-sm text-xs text-on-surface-variant">Offer my trade</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-md text-xs font-bold text-on-surface" for="reg-name">Full Name</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-[20px] text-on-surface-variant pointer-events-none">badge</span>
+                <input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-sm pl-11 pr-4 py-3 rounded-xl shadow-sm outline-none transition-all duration-200 focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" id="reg-name" placeholder="e.g. John Doe" required="" type="text"/>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-md text-xs font-bold text-on-surface" for="reg-phone">Phone Number</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-[20px] text-on-surface-variant pointer-events-none">call</span>
+                <input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-sm pl-11 pr-4 py-3 rounded-xl shadow-sm outline-none transition-all duration-200 focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" id="reg-phone" placeholder="e.g. +1 (555) 019-2834" required="" type="tel"/>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-md text-xs font-bold text-on-surface" for="reg-email">Email Address</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-[20px] text-on-surface-variant pointer-events-none">mail</span>
+                <input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-sm pl-11 pr-4 py-3 rounded-xl shadow-sm outline-none transition-all duration-200 focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" id="reg-email" placeholder="e.g. alex@example.com" required="" type="email"/>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-md text-xs font-bold text-on-surface" for="reg-password">Create Password</label>
+              <div class="relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3.5 text-[20px] text-on-surface-variant pointer-events-none">lock</span>
+                <input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-sm pl-11 pr-11 py-3 rounded-xl shadow-sm outline-none transition-all duration-200 focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary" id="reg-password" placeholder="At least 8 characters" required="" type="password"/>
+                <button class="absolute right-3 p-1 text-on-surface-variant hover:text-on-surface flex items-center" id="toggle-reg-pass" onclick="togglePassVisibility('reg-password', 'icon-reg-eye')" type="button">
+                  <span class="material-symbols-outlined text-[20px]" id="icon-reg-eye">visibility</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-2 pt-1">
+              <input class="mt-1 w-4 h-4 rounded text-secondary accent-secondary cursor-pointer shrink-0" id="terms-agree" required="" type="checkbox"/>
+              <label class="font-body-sm text-xs text-on-surface cursor-pointer select-none" for="terms-agree">
+                I agree to HomeEase <span class="text-secondary font-label-sm text-xs font-semibold">Terms of Service</span> &amp; <span class="text-secondary font-label-sm text-xs font-semibold">Privacy Policy</span>
+              </label>
+            </div>
+
+            <button class="w-full py-3.5 px-4 rounded-xl bg-secondary text-on-secondary font-label-lg text-sm font-bold shadow-md active:scale-[0.99] transition-all flex items-center justify-center gap-2 mt-2 hover:bg-on-secondary-fixed-variant" id="btn-submit-reg" type="submit">
+              <span>Create Free Account</span>
+              <span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+            </button>
+          </form>
+
+          <!-- Social login divider -->
+          <div class="relative my-4 flex items-center justify-center">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full h-px bg-surface-container-high"></div>
+            </div>
+            <span class="relative px-3 bg-surface-container-lowest font-label-sm text-xs text-on-surface-variant">
+              Or continue with
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <button class="py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface font-label-md text-xs font-bold shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-all hover:bg-surface-container" onclick="showToast('Connecting to Google SSO demo...', 'security')" type="button">
+              <svg class="w-4 h-4 shrink-0" viewbox="0 0 24 24">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+              </svg>
+              <span>Google</span>
+            </button>
+            <button class="py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface font-label-md text-xs font-bold shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-all hover:bg-surface-container" onclick="showToast('SMS verification code sent to demo mobile.', 'sms')" type="button">
+              <span class="material-symbols-outlined text-[18px] text-secondary">sms</span>
+              <span>Phone Code</span>
+            </button>
+          </div>
+
+          <div class="pt-2 flex items-center justify-center gap-4 text-on-surface-variant font-label-sm text-xs">
+            <div class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+              <span>256-Bit Encrypted</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px] text-secondary">support_agent</span>
+              <span>24/7 Home Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================== -->
+    <!-- GLOBAL MOBILE BOTTOM NAVIGATION BAR (md:hidden) -->
+    <!-- Visible on phones, hidden on laptops/desktops -->
+    <!-- ============================================================== -->
+    <nav id="global-bottom-nav" class="md:hidden fixed bottom-0 inset-x-0 z-40 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)] border-t border-surface-container">
+      <div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto">
+        <button type="button" class="nav-tab active flex flex-col items-center justify-center w-14 h-12 transition-colors text-secondary font-semibold" data-screen="home" onclick="navigateTo('home')">
+          <span class="material-symbols-outlined text-[24px]">home</span>
+          <span class="font-label-sm text-[11px] mt-0.5">Home</span>
+        </button>
+
+        <button type="button" class="nav-tab flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-screen="services" onclick="navigateTo('services')">
+          <span class="material-symbols-outlined text-[24px]">grid_view</span>
+          <span class="font-label-sm text-[11px] mt-0.5">Services</span>
+        </button>
+
+        <button type="button" class="nav-tab flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-screen="book" onclick="navigateTo('book')">
+          <span class="material-symbols-outlined text-[24px]">add_circle</span>
+          <span class="font-label-sm text-[11px] mt-0.5">Book</span>
+        </button>
+
+        <button type="button" class="nav-tab flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-screen="customer-dashboard" onclick="navigateTo('customer-dashboard')">
+          <span class="material-symbols-outlined text-[24px]">calendar_today</span>
+          <span class="font-label-sm text-[11px] mt-0.5">Bookings</span>
+        </button>
+
+        <button type="button" class="nav-tab flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-screen="provider-dashboard" onclick="navigateTo('provider-dashboard')">
+          <span class="material-symbols-outlined text-[24px]">engineering</span>
+          <span class="font-label-sm text-[11px] mt-0.5">Provider</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============================================================== -->
+    <!-- MODALS & FEEDBACK CONTAINERS -->
+    <!-- ============================================================== -->
+
+    <!-- 1. Booking Confirmation Modal -->
+    <div class="fixed inset-0 z-50 flex items-center justify-center px-4 modal-backdrop hidden transition-opacity duration-200" id="booking-confirm-modal">
+      <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 w-full max-w-sm shadow-2xl flex flex-col items-center text-center space-y-4 animate-in fade-in zoom-in-95 border border-surface-container">
+        <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+          <span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+        </div>
+        <div>
+          <h3 class="font-headline-md text-xl font-bold text-on-surface">Booking Requested!</h3>
+          <p class="font-body-md text-sm text-on-surface-variant mt-1">Your service request has been queued. A top-rated technician is being assigned right away.</p>
+        </div>
+        <div class="w-full bg-surface-container-low p-4 rounded-xl space-y-2 text-left text-xs">
+          <div class="flex justify-between font-label-sm text-on-surface-variant">
+            <span>Booking Ref:</span>
+            <span class="text-on-surface font-bold" id="modal-booking-ref">#HE-84920</span>
+          </div>
+          <div class="flex justify-between font-label-sm text-on-surface-variant">
+            <span>Service:</span>
+            <span class="text-on-surface font-bold" id="modal-booking-service">Electrician</span>
+          </div>
+          <div class="flex justify-between font-label-sm text-on-surface-variant">
+            <span>Scheduled:</span>
+            <span class="text-on-surface font-bold" id="modal-booking-date">Tomorrow • Morning</span>
+          </div>
+          <div class="flex justify-between font-label-sm text-on-surface-variant">
+            <span>Amount to Pay:</span>
+            <span class="text-secondary font-bold text-sm" id="modal-booking-amount">$29.00</span>
+          </div>
+        </div>
+        <button class="w-full bg-secondary text-on-secondary py-3.5 rounded-xl font-label-lg text-sm font-bold hover:bg-on-secondary-fixed-variant transition-colors active:scale-95 shadow-md flex items-center justify-center gap-2" onclick="completeBookingAndRedirect()" type="button">
+          <span>Got it, View Bookings</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. Customer Booking Details Modal -->
+    <div class="fixed inset-0 z-50 modal-backdrop hidden flex items-end sm:items-center justify-center p-0 sm:p-4 transition-opacity" id="customer-details-modal">
+      <div class="bg-surface-container-lowest w-full max-w-md rounded-t-2xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl flex flex-col gap-4 border border-surface-container">
+        <div class="flex items-center justify-between pb-2 border-b border-surface-container">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary">verified_user</span>
+            <h3 class="font-headline-sm text-lg font-bold text-on-surface">Booking Details</h3>
+          </div>
+          <button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeDetailsModal()">
+            <span class="material-symbols-outlined text-sm">close</span>
+          </button>
+        </div>
+        <div class="flex flex-col gap-2.5 bg-surface-container-low p-4 rounded-xl text-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-on-surface-variant text-xs font-semibold">Service:</span>
+            <span class="font-bold text-on-surface text-right" id="details-modal-service">Kitchen Sink Leak</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-on-surface-variant text-xs font-semibold">Provider:</span>
+            <span class="font-bold text-on-surface text-right" id="details-modal-provider">David Miller</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-on-surface-variant text-xs font-semibold">Time Slot:</span>
+            <span class="font-bold text-on-surface text-right" id="details-modal-time">Tomorrow at 10:00 AM</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-on-surface-variant text-xs font-semibold">Pricing:</span>
+            <span class="font-bold text-secondary text-right" id="details-modal-price">$25.00 Est.</span>
+          </div>
+        </div>
+        <button class="w-full h-11 bg-secondary text-on-secondary rounded-xl font-label-lg text-sm font-bold flex items-center justify-center" onclick="closeDetailsModal()">
+          Done
+        </button>
+      </div>
+    </div>
+
+    <!-- 3. Global Floating Toast Notification -->
+    <div id="global-toast" class="fixed top-20 left-4 right-4 max-w-sm mx-auto z-50 bg-inverse-surface text-inverse-on-surface p-3.5 rounded-xl shadow-2xl flex items-center gap-3 transition-all duration-300 -translate-y-24 opacity-0 pointer-events-none">
+      <span class="material-symbols-outlined text-secondary-fixed text-[22px] flex-shrink-0" id="global-toast-icon">check_circle</span>
+      <p class="font-body-sm text-xs font-semibold flex-1 leading-snug" id="global-toast-msg">Action performed successfully</p>
+      <button onclick="hideToast()" class="text-inverse-on-surface/80 hover:text-inverse-on-surface flex-shrink-0 p-1">
+        <span class="material-symbols-outlined text-[16px]">close</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Main JavaScript Controller -->
+  <script src="app.js"></script>
+</body>
+</html>

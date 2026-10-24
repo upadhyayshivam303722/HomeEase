@@ -1,0 +1,59 @@
+# ===================================================================
+# HomeEase - Git Ignore Configuration
+# ===================================================================
+
+# 1. Environment Variables & Secrets (CRITICAL - NEVER COMMIT REAL SECRETS)
+.env
+.env.local
+.env.*.local
+*.env
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# 2. Dependency Directories
+node_modules/
+backend/node_modules/
+jspm_packages/
+
+# 3. Preserve lockfiles for deterministic dependency installations
+# package-lock.json is tracked
+!package-lock.json
+!backend/package-lock.json
+
+# 4. Logs and Debugging Output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 5. OS and Shell Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 6. IDE & Editor Workspace Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 7. Temporary, Cache and Scratch Files
+.cache/
+.parcel-cache/
+.tempmediaStorage/
+temp/
+tmp/
+scratch/

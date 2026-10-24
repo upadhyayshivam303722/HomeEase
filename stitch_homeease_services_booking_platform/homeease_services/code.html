@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#005049", "on-secondary-container": "#006f66", "primary": "#000000", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd", "error-container": "#ffdad6", "on-primary": "#ffffff", "surface": "#f8f9ff", "on-primary-fixed": "#131b2e", "on-primary-fixed-variant": "#3f465c", "secondary-fixed-dim": "#6bd8cb", "tertiary-container": "#00164e", "on-tertiary-fixed-variant": "#264191", "on-background": "#0b1c30", "background": "#f8f9ff", "outline": "#76777d", "surface-container-high": "#dce9ff", "secondary-fixed": "#89f5e7", "inverse-surface": "#213145", "surface-container-lowest": "#ffffff", "surface-dim": "#cbdbf5", "tertiary": "#000000", "on-tertiary-container": "#6780d3", "inverse-primary": "#bec6e0", "on-surface": "#0b1c30", "surface-container-highest": "#d3e4fe", "surface-container": "#e5eeff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#b6c4ff", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "primary-container": "#131b2e", "surface-container-low": "#eff4ff", "secondary": "#006a61", "secondary-container": "#86f2e4", "on-primary-container": "#7c839b", "tertiary-fixed": "#dce1ff", "on-surface-variant": "#45464d", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-tertiary-fixed": "#00164e", "on-secondary-fixed": "#00201d", "primary-fixed-dim": "#bec6e0", "on-error-container": "#93000a", "surface-variant": "#d3e4fe" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "margin": "2rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="HomeEase Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XkRGKsRrX_k8qNutuwSAvysLwyd1WvPhCfxPKPQ5Kh-7uqdsLj_d9-bIobyys1vTGY9hSEmU4gliNSfWIl3A-oiYWGtwh1vR1-ZXvPk5qn5NCHFWPGRuT_nQo1p2ByQVtGZbyjz39cIr2eNgkMqiya7XvOSSdWya18o-aOJAAcrRNVWmfaOvHowsstua-tzeVJloHkjWjFHSkcoxfyP7B0BaXZEVibn-5qksy0HDgR-SMJflxQNFwdw4M"/><span class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">Services</span></div><div class="flex items-center gap-space-xs"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9WgKn8hJFjw9TSqa5q9VVtM90CnXaA786LKQWIQs8YIVmwQpHLXCw8DEeMv485uM9g0OPcma18LVlVHudbQNDtfKOAYujXeChd5M4IagXb1jFXd4yZECKH4mfv7A_NF9ywPM0qd69jqP99yWdq7YPktoCV_9DIFAN0E4vAhMghT9m8CZ_ZbyHSRq6FpfWWNDfG-o2mw39uEkQGKxgbj1wRYQi4tvZON5wMF0RUG6n6iObj7eAvcAI"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile space-y-space-md">
+<!-- Header Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-primary-container text-on-primary p-space-lg shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/10 pointer-events-none blur-2xl"></div>
+<div class="flex items-center gap-space-xs mb- space-xs">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold">✓</span>
+<span class="font-label-md text-label-md text-secondary-fixed">Verified Pros &amp; Fixed Rates</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">All Home Services</h1>
+<p class="font-body-md text-body-md text-on-primary-container mt-space-xs leading-relaxed">
+      Transparent upfront pricing with zero hidden fees. Select a service to get started.
+    </p>
+<!-- Micro Trust Metric Badges -->
+<div class="mt-space-md pt-space-sm flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-primary font-bold">4.9/5 Rating</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-on-primary-container"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-primary">Background Checked</span>
+</div>
+</div>
+</div>
+<!-- Category Filter Pills Bar -->
+<div class="overflow-x-auto -mx-gutter-mobile px-gutter-mobile scrollbar-none py-1">
+<div class="flex items-center gap-space-xs min-w-max" id="categoryFilterContainer">
+<button class="category-pill active flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-tertiary-container text-on-primary shadow-sm font-label-md text-label-md transition-all duration-200" onclick="filterCategory('all', this)">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+<span>All (6)</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-label-md transition-all duration-200" onclick="filterCategory('electrical', this)">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Electrical</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-label-md transition-all duration-200" onclick="filterCategory('plumbing', this)">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span>Plumbing</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-label-md transition-all duration-200" onclick="filterCategory('cleaning', this)">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Cleaning</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-label-md transition-all duration-200" onclick="filterCategory('appliance', this)">
+<span class="material-symbols-outlined text-[16px]">build</span>
+<span>Appliance</span>
+</button>
+</div>
+</div>
+<!-- Services Grid / List -->
+<div class="flex flex-col space-y-space-md" id="servicesList">
+<!-- Card 1: Electrician - General Repair -->
+<article class="service-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="electrical">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-fixed-variant">Electrical</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Electrician - General Repair</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Starts at</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold leading-none">$29</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Switchboard fixes, ceiling fan setup, short circuit triage, and fixture mounting.
+        </p>
+<!-- Visual Highlights Pill Strip -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md flex flex-wrap items-center gap-y-1.5 gap-x-space-sm text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>60 Mins inspection</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Tools included</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>30-day warranty</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span class="font-label-sm text-label-sm">Next Slot: Today, 3 PM</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="selectService('Electrician - General Repair', '$29')">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Plumber - Leak & Pipe Fixes -->
+<article class="service-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="plumbing">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Plumbing</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Plumber - Leak &amp; Pipe Fixes</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Starts at</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold leading-none">$25</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Fix leaking faucets, unclog sinks, toilet repairs, and shower installations.
+        </p>
+<!-- Highlights -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md flex flex-wrap items-center gap-y-1.5 gap-x-space-sm text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Quick leakage check</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Spare parts ready</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Clean finish</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">thumb_up</span>
+<span class="font-label-sm text-label-sm">Top Rated Choice</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="selectService('Plumber - Leak &amp; Pipe Fixes', '$25')">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Home Deep Cleaning -->
+<article class="service-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="cleaning">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Sanitization</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Home Deep Cleaning</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Starts at</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold leading-none">$39</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Full apartment or room scrubbing, dusting, window buffing, and disinfectant floor wash.
+        </p>
+<!-- Highlights -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md flex flex-wrap items-center gap-y-1.5 gap-x-space-sm text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Eco-friendly chemicals</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Kitchen &amp; bath focus</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>2-3 hours</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+<span class="font-label-sm text-label-sm">Safe for Pets &amp; Kids</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="selectService('Home Deep Cleaning', '$39')">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Appliance Installation -->
+<article class="service-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="appliance">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-tertiary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">build</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-fixed-variant">Major Appliances</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Appliance Installation</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Starts at</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold leading-none">$35</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Washing machine, water purifier (RO), and AC unmounting/mounting assistance.
+        </p>
+<!-- Highlights -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md flex flex-wrap items-center gap-y-1.5 gap-x-space-sm text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Certified technicians</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Safe power testing</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm">OEM Standard</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="selectService('Appliance Installation', '$35')">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Emergency Electrical Triage -->
+<article class="service-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="electrical">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">fmd_bad</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm mb-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span>Fast Express</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Emergency Electrical Triage</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Starts at</span>
+<span class="font-headline-md text-headline-md text-error font-bold leading-none">$45</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Urgent power outage and burnt wire replacement within 45 minutes.
+        </p>
+<!-- Highlights -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md flex flex-wrap items-center gap-y-1.5 gap-x-space-sm text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Priority dispatch</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>High safety gear</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Under 45 mins</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<div class="flex items-center gap-1.5 text-error font-medium">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span class="font-label-sm text-label-sm">Instant Crew Ready</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="selectService('Emergency Electrical Triage', '$45')">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 6: Kitchen Deep Sanitization & Venting -->
+<article class="service-card bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col justify-between" data-category="cleaning">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">countertops</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Specialist Care</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Kitchen &amp; Vent Scrub</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Starts at</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold leading-none">$32</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Degreasing exhaust fans, cooktop scrub, countertop sterilization, and cabinet surface polish.
+        </p>
+<!-- Highlights -->
+<div class="bg-surface-container-low rounded-xl p-space-sm mb-space-md flex flex-wrap items-center gap-y-1.5 gap-x-space-sm text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Food-safe degreasers</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Stainless steel polish</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">clean_hands</span>
+<span class="font-label-sm text-label-sm">High Hygiene</span>
+</div>
+<button class="px-space-lg py-2.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" onclick="selectService('Kitchen &amp; Vent Scrub', '$32')">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Bottom Visual Break / Pro Showcase Card -->
+<div class="bg-surface-container-low rounded-2xl p-space-md flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A friendly and professional female technician smiling while carrying a clean organized modern toolkit in a modern warm home interior with soft natural lighting and calm blue-teal hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvlcLaWmJNO9dsVju6ooSsEkh3UpcPuOskKVLltsHJHenJ7bU79VselUT3praklS4hZ3IqjnbgtBX3TMbGSotNRL1FY2yeGrsgMTvM3da_JtABXqWEU3PcyTv2xk3R6pWtC1XE-mAy6iHKAsKDONbaJwj1sklu8AQMOXjhhxqTjU-6_VocDBPeL-NZ9u1lJnRC-TiXkZJDRsTwfCzAWFiPFOKs36GSln9pHCx8uMBfAneZ660PyhiP"/>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">1,400+ Verified Specialists</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+        All technicians undergo mandatory background screenings, licensing reviews, and identity checks.
+      </p>
+</div>
+</div>
+<!-- Bottom Guarantee Banner -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-background">100% Satisfaction Guarantee</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Not happy? We will make it right free of cost. If any issue arises within 30 days of service completion, our team returns at no extra charge.
+      </p>
+<div class="mt-space-sm flex items-center gap-space-md text-secondary font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Zero Re-visit Fee</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Instant Redo</span>
+</div>
+</div>
+</div>
+<!-- Interactive Toast Notification container for Booking confirmation -->
+<div class="fixed bottom-20 left-4 right-4 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="bookingToast">
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-2xl">check_circle</span>
+<div>
+<p class="font-label-md text-label-md text-secondary-container" id="toastTitle">Service Selected</p>
+<p class="font-body-sm text-body-sm text-on-primary-container" id="toastSubtitle">Proceeding to slot selection...</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-primary-container text-lg">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+<script>
+  function filterCategory(category, activeBtn) {
+    // Update active pill UI
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(pill => {
+      pill.className = 'category-pill flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container shadow-sm font-label-md text-label-md transition-all duration-200';
+    });
+
+    activeBtn.className = 'category-pill active flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-tertiary-container text-on-primary shadow-sm font-label-md text-label-md transition-all duration-200';
+
+    // Filter Service Cards
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      if (category === 'all' || cardCategory === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function selectService(serviceName, startingPrice) {
+    const toast = document.getElementById('bookingToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastSubtitle = document.getElementById('toastSubtitle');
+
+    toastTitle.innerText = serviceName;
+    toastSubtitle.innerText = 'Locking your base quote (' + startingPrice + ')...';
+
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-secondary font-semibold" data-path="services" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Services</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="book-service" href="#"><span class="material-symbols-outlined text-[24px]">add_circle</span><span class="font-label-sm text-label-sm mt-0.5">Book</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="my-bookings" href="#"><span class="material-symbols-outlined text-[24px]">calendar_today</span><span class="font-label-sm text-label-sm mt-0.5">Bookings</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="provider-view" href="#"><span class="material-symbols-outlined text-[24px]">engineering</span><span class="font-label-sm text-label-sm mt-0.5">Provider</span></a></div></nav></body></html>

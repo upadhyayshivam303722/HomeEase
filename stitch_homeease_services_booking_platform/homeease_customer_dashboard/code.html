@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#005049", "on-secondary-container": "#006f66", "primary": "#000000", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd", "error-container": "#ffdad6", "on-primary": "#ffffff", "surface": "#f8f9ff", "on-primary-fixed": "#131b2e", "on-primary-fixed-variant": "#3f465c", "secondary-fixed-dim": "#6bd8cb", "tertiary-container": "#00164e", "on-tertiary-fixed-variant": "#264191", "on-background": "#0b1c30", "background": "#f8f9ff", "outline": "#76777d", "surface-container-high": "#dce9ff", "secondary-fixed": "#89f5e7", "inverse-surface": "#213145", "surface-container-lowest": "#ffffff", "surface-dim": "#cbdbf5", "tertiary": "#000000", "on-tertiary-container": "#6780d3", "inverse-primary": "#bec6e0", "on-surface": "#0b1c30", "surface-container-highest": "#d3e4fe", "surface-container": "#e5eeff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#b6c4ff", "surface-tint": "#565e74", "primary-fixed": "#dae2fd", "primary-container": "#131b2e", "surface-container-low": "#eff4ff", "secondary": "#006a61", "secondary-container": "#86f2e4", "on-primary-container": "#7c839b", "tertiary-fixed": "#dce1ff", "on-surface-variant": "#45464d", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-tertiary-fixed": "#00164e", "on-secondary-fixed": "#00201d", "primary-fixed-dim": "#bec6e0", "on-error-container": "#93000a", "surface-variant": "#d3e4fe" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "margin": "2rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="HomeEase Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XkRGKsRrX_k8qNutuwSAvysLwyd1WvPhCfxPKPQ5Kh-7uqdsLj_d9-bIobyys1vTGY9hSEmU4gliNSfWIl3A-oiYWGtwh1vR1-ZXvPk5qn5NCHFWPGRuT_nQo1p2ByQVtGZbyjz39cIr2eNgkMqiya7XvOSSdWya18o-aOJAAcrRNVWmfaOvHowsstua-tzeVJloHkjWjFHSkcoxfyP7B0BaXZEVibn-5qksy0HDgR-SMJflxQNFwdw4M"/><span class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">My Bookings</span></div><div class="flex items-center gap-space-xs"><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9WgKn8hJFjw9TSqa5q9VVtM90CnXaA786LKQWIQs8YIVmwQpHLXCw8DEeMv485uM9g0OPcma18LVlVHudbQNDtfKOAYujXeChd5M4IagXb1jFXd4yZECKH4mfv7A_NF9ywPM0qd69jqP99yWdq7YPktoCV_9DIFAN0E4vAhMghT9m8CZ_ZbyHSRq6FpfWWNDfG-o2mw39uEkQGKxgbj1wRYQi4tvZON5wMF0RUG6n6iObj7eAvcAI"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Customer Header Banner -->
+<div class="px-gutter-mobile pt-space-md pb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Warm friendly customer portrait avatar of a young professional Alex smiling in modern sunlit apartment, soft warm lighting, high quality lifestyle photography with soft teal and navy studio tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGsnx4Tzx7H-O5aqk8CnGYORcnwKdrpdpa_IDPOMDGh5su9VEC6JyIV9ag_kDxwbKU-Nc-WiJADAevyxYUueoatC7oR5CqhEiryElly5tAV-e4bS9Q9f8czouDbF4oTmFrE6qV4RAMNGkOoWcLHzaVnRnKjH2zGxJUFegP4ABz0CJHtvrm1DM7tuvw0JQaTMgH2dogdK7V9rUfDCamSZHopSszTZblNuznyzk3pDwaK1bExVcxAr0V"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-secondary" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Welcome back, Alex!</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+            Greenwood Heights, Apt 4B
+          </p>
+</div>
+</div>
+<div class="flex-shrink-0 bg-surface-container-high rounded-lg px-space-sm py-1.5 text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none block">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mt-0.5">Active</span>
+</div>
+</div>
+</div>
+<!-- Interactive Filter Tabs -->
+<div class="px-gutter-mobile pb-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5" id="filter-tab-bar" role="tablist">
+<button class="filter-tab flex-shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-inverse-surface text-inverse-on-surface shadow-sm transition-all" data-target="all" onclick="filterBookings('all', this)">
+        All Bookings (4)
+      </button>
+<button class="filter-tab flex-shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shadow-sm transition-all" data-target="accepted" onclick="filterBookings('accepted', this)">
+        Accepted (1)
+      </button>
+<button class="filter-tab flex-shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shadow-sm transition-all" data-target="pending" onclick="filterBookings('pending', this)">
+        Pending (1)
+      </button>
+<button class="filter-tab flex-shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant shadow-sm transition-all" data-target="completed" onclick="filterBookings('completed', this)">
+        Completed (2)
+      </button>
+</div>
+</div>
+<!-- Content Stream -->
+<div class="px-gutter-mobile flex flex-col gap-space-lg pb-space-xl">
+<!-- Section 1: Upcoming & In-Progress Bookings -->
+<section class="flex flex-col gap-space-md" id="upcoming-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Upcoming &amp; In-Progress</h2>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold">2 Scheduled</span>
+</div>
+<!-- Card 1: Accepted Plumber Booking -->
+<article class="booking-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-transform duration-200" data-status="accepted">
+<!-- Top Status Bar & Price -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Accepted</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-secondary font-bold">$25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">Est. total</span>
+</div>
+</div>
+<!-- Service Info & Thumbnail -->
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern high precision plumbing repair tools, wrench, pipes and copper connectors on neutral clean workshop surface, subtle cinematic lighting with teal accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX-iuipy3ibcWNgJLOcHyROpcd9cSqNNUNOMJIcFvwCQ1cLsdt2l1v5Iqwflzek-zDYmxIDY9kHpTIAWoFPdJZBWsMuG4qq75DZ0lOEMUSqwGDgh71bczoaoNbFAbrKKkn35YJd8G_ezyy8sJeYsQqwH7ap9R7fqRhg1vVpkMd1g-28Xpgu56EVw4TKHJCNlHWDmdcRqvIjP_bHHwjPukPWdhEQMCgoooQRTO6KGqL0segZ7hzWMa6"/>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wide">Plumbing Repair</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Kitchen Sink Leak &amp; Pipe Seal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard diagnostic + seal ring replacement</p>
+</div>
+</div>
+<!-- Assigned Pro Mini Card -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-9 h-9 rounded-full object-cover flex-shrink-0" data-alt="Professional technician David Miller portrait in clean navy uniform, friendly smile, workshop background, high key professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHRRN9mSMzKHVh3CyDclZZDV63zW8Ow-6J2fdwTzUi7MHiL3mzUblMSAEEV8XUdOMRh_vI20COFKtF94D09i05miJBXK_f7F-4ayP3o0-H_FniGPcIrDKhBjKRc45ySOVHoN8gAWYF0qhRQsIibWKGCnEn8vbE3z1oKfbE1mxmDTq_v6zDV8Xh47W4Q80BlEV3o0Uw9_IJBli1TXLRo7uI913Fih7FNHkvfmiAP0VAYDEXfbLiIwQK"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface truncate">David Miller</span>
+<span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">Certified Plumber • 4.9 ★ (142 reviews)</span>
+</div>
+</div>
+<div class="flex-shrink-0">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded font-label-sm text-label-sm text-secondary font-bold shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary">verified_user</span> Pro
+            </span>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest py-0.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">event</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Schedule</span>
+<span class="font-label-md text-label-md text-on-surface truncate block">Tomorrow, Oct 24</span>
+<span class="font-body-sm text-body-sm text-on-surface block">10:00 AM</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Service Spot</span>
+<span class="font-label-md text-label-md text-on-surface truncate block">Greenwood Hts</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate block">Apt 4B • Entry A</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<a class="flex-1 h-11 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" href="tel:5550192831">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Provider</span>
+</a>
+<button class="flex-1 h-11 bg-surface-container text-on-surface rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="openDetailsModal('Kitchen Sink Leak', 'David Miller', '$25 Est.', 'Tomorrow at 10:00 AM')" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>View Details</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Pending Electrician Booking -->
+<article class="booking-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-transform duration-200" data-status="pending">
+<!-- Top Status Bar & Price -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="inline-flex items-center gap-1.5 bg-[#FEF3C7] text-[#B45309] px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+<span>Pending Provider</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$29</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">Est. total</span>
+</div>
+</div>
+<!-- Service Info & Thumbnail -->
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Electrical switchboard circuit breakers with insulated testing gear, warm studio lighting with safety gear in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjnP-Zyi1xl9mzX4eLJB1_x7YWwfd_vfB1BSfXzGlEJ-qYPQExE9QPjtGvW91Rc1ze6V1bZB-dmLBAlQA3hfOfPjOdtLjIxUFi3NXsy1Bt-ZVtN47U6WypltKhinEgXbG8hKv5jPHs2dV_rWy4JjojmQ-vVkWTdDtV7ST6x1r8CC4ewGWDq08IzxUktuQIqwYO81vawJsPhVrEKkTV4Oom92MChAN-JZurtcDcI4QljnG32oWgFIy8"/>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-[#B45309] uppercase font-bold tracking-wide">Electrical Safety</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Switchboard Sparking Diagnostic</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Master bedroom board • Urgent check</p>
+</div>
+</div>
+<!-- Radar Pulse Match Banner -->
+<div class="bg-[#FFFBEB] rounded-lg p-space-sm flex items-center gap-space-sm">
+<div class="relative flex items-center justify-center w-7 h-7 flex-shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F59E0B] opacity-30"></span>
+<span class="relative inline-flex rounded-full h-5 w-5 bg-[#F59E0B] text-white items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">radar</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#92400E] leading-snug">
+            Finding nearest certified electrician in your area. Matches typically take under 15 mins.
+          </p>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest py-0.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_clock</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested Slot</span>
+<span class="font-label-md text-label-md text-on-surface truncate block">Friday, Oct 25</span>
+<span class="font-body-sm text-body-sm text-on-surface block">02:00 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">home_pin</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Location</span>
+<span class="font-label-md text-label-md text-on-surface truncate block">Greenwood Hts</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate block">Apt 4B</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 bg-error-container text-error rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="confirmCancelBooking(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>Cancel Request</span>
+</button>
+<button class="flex-1 h-11 bg-surface-container text-on-surface rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="editBookingModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Edit Details</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Section 2: Previous Bookings (Completed) -->
+<section class="flex flex-col gap-space-md" id="completed-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">history</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Previous Bookings</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Completed</span>
+</div>
+<!-- Card 3: Completed Deep Cleaning -->
+<article class="booking-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-transform duration-200" data-status="completed">
+<!-- Status and Price -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="inline-flex items-center gap-1.5 bg-[#D1FAE5] text-[#047857] px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span>Completed</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$39.00</span>
+<span class="font-label-sm text-label-sm text-[#047857] flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check</span> Paid
+            </span>
+</div>
+</div>
+<!-- Service Info & Thumbnail -->
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Spotless bright contemporary kitchen and living room apartment after professional deep cleaning, gleaming countertops, soft natural light, pristine tidy home interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnVQiW27Y8DrfUaqgutYRdjyHV2N4v3zUp_W6bGB_gRzw7jepbBPWOQVHJCrkeQq7p8d5jIHjawWDXp_ydUv2AxMBL__Kb8fZW0nhZrEXpnp1JfLobUEfLtvctEW0hBLaWVXOzyOHDPntjQm0U6_Q_y2zQb49br2mo9mju4T5INuCalpxUbHQu5AUas5IXs7JM04C30MIfKNHu7GdQ4ashcSOZoEAa1YviqVxWuvs00_-u6fsCbo0-"/>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-[#047857] uppercase font-bold tracking-wide">Housekeeping</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Home Deep Cleaning - 2BHK</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completed on Oct 15, 2025</p>
+</div>
+</div>
+<!-- Provider Note & Rating Given -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md font-bold">
+              ER
+            </div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate block">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">HomeEase Pro Partner</span>
+</div>
+</div>
+<div class="flex items-center gap-0.5 text-[#F59E0B]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="triggerRebook('Home Deep Cleaning - 2BHK')" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Book Again</span>
+</button>
+<button class="flex-1 h-11 bg-surface-container text-on-surface rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="downloadReceiptNotification('REC-9942')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Receipt</span>
+</button>
+</div>
+</article>
+<!-- Card 4 (Bonus Completed for realism): AC Filter & Duct Maintenance -->
+<article class="booking-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-transform duration-200" data-status="completed">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="inline-flex items-center gap-1.5 bg-[#D1FAE5] text-[#047857] px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span>Completed</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$45.00</span>
+<span class="font-label-sm text-label-sm text-[#047857] flex items-center justify-end gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check</span> Paid
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Air conditioner wall mounted unit with clean fresh filters installed, cool soft blue airflow breeze concept, clean apartment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjcMYriarGYo6c1-nLJX3ivJrRnBp9Z66FKHhIaxicfHdMpd2mNqDYbsT9S0BYqlZE1EznITbqisAPBCjjBaAnzKxpMY5f_diOEGLYLcTNc7M4a0kSaoy0d93RctLkMthtIjS47EjhFixWzoqrgTpcW7BK-x6kTyfJ-x6B-55_py_jijPtSdi4BYa-moEdsSjOKBvsr3GZVGgK1IPARJj7DaSWehvqX6GRnw7Mye3nKYpyxfO1qvsT"/>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-[#047857] uppercase font-bold tracking-wide">HVAC Service</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">AC Filter &amp; Coolant Tune-up</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completed on Sep 28, 2025</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="triggerRebook('AC Filter Tune-up')" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Book Again</span>
+</button>
+<button class="flex-1 h-11 bg-surface-container text-on-surface rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" onclick="downloadReceiptNotification('REC-8812')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Receipt</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Empty State Container (Hidden by default, triggered on empty filter) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-xl text-center flex-col items-center justify-center gap-space-sm shadow-sm" id="filter-empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[32px]">folder_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">No bookings in this category</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px]">All caught up! Check other tabs or schedule a brand new home service whenever you are ready.</p>
+<button class="mt-space-sm px-space-md py-2 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md" onclick="filterBookings('all', document.querySelector('[data-target=all]'))">
+        View All Bookings
+      </button>
+</div>
+<!-- Quick Action / Book New Service Prompt Card -->
+<div class="bg-gradient-to-r from-surface-container-highest to-surface-container-high rounded-xl p-space-md flex items-center justify-between gap-space-md shadow-sm">
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase block">Need more help?</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Instant Home Repairs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carpentry, painting, deep cleaning &amp; more.</p>
+</div>
+<a aria-label="Book New Service" class="flex-shrink-0 w-12 h-12 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-md active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl">add</span>
+</a>
+</div>
+</div>
+<!-- Quick Action Floating Bar -->
+<div class="sticky bottom-20 px-gutter-mobile z-40 pb-space-sm">
+<div class="bg-inverse-surface/95 backdrop-blur-md rounded-xl p-space-sm flex items-center justify-between shadow-xl text-inverse-on-surface">
+<div class="flex items-center gap-space-sm pl-space-xs min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">handyman</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-surface-dim truncate">Need another repair?</p>
+<p class="font-headline-sm text-headline-sm text-inverse-on-surface truncate -mt-0.5">Book certified pros</p>
+</div>
+</div>
+<button class="flex-shrink-0 h-10 px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerQuickBook()">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Book New</span>
+</button>
+</div>
+</div>
+<!-- Interactive Details Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden flex items-end sm:items-center justify-center p-0 sm:p-4 transition-opacity" id="booking-modal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-t-2xl sm:rounded-2xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Booking Details</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeDetailsModal()">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Service:</span>
+<span class="font-label-md text-label-md text-on-surface text-right font-bold" id="modal-service">Kitchen Sink Leak</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Provider:</span>
+<span class="font-label-md text-label-md text-on-surface text-right" id="modal-provider">David Miller</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Time Slot:</span>
+<span class="font-label-md text-label-md text-on-surface text-right" id="modal-time">Tomorrow at 10:00 AM</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pricing:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold" id="modal-price">$25 Est.</span>
+</div>
+</div>
+<div class="flex gap-space-sm">
+<button class="w-full h-11 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg flex items-center justify-center" onclick="closeDetailsModal()">
+          Done
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed top-20 inset-x-4 max-w-sm mx-auto z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-xl hidden flex items-center justify-between gap-space-sm transition-all transform -translate-y-2" id="toast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-text">Action completed</span>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface" onclick="hideToast()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  function filterBookings(status, activeBtn) {
+    // Update Tab UI states
+    const tabs = document.querySelectorAll('.filter-tab');
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-inverse-surface', 'text-inverse-on-surface');
+      tab.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      activeBtn.classList.add('bg-inverse-surface', 'text-inverse-on-surface');
+    }
+
+    const cards = document.querySelectorAll('.booking-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardStatus = card.getAttribute('data-status');
+      if (status === 'all' || cardStatus === status) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Handle sections header visibility based on filter
+    const upcomingSec = document.getElementById('upcoming-section');
+    const completedSec = document.getElementById('completed-section');
+    const emptyState = document.getElementById('filter-empty-state');
+
+    if (status === 'completed') {
+      upcomingSec.style.display = 'none';
+      completedSec.style.display = 'flex';
+    } else if (status === 'accepted' || status === 'pending') {
+      upcomingSec.style.display = 'flex';
+      completedSec.style.display = 'none';
+    } else {
+      upcomingSec.style.display = 'flex';
+      completedSec.style.display = 'flex';
+    }
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    toastText.innerText = message;
+    toast.classList.remove('hidden', '-translate-y-2');
+    setTimeout(() => {
+      hideToast();
+    }, 3500);
+  }
+
+  function hideToast() {
+    const toast = document.getElementById('toast');
+    toast.classList.add('hidden');
+  }
+
+  function confirmCancelBooking(btn) {
+    if (confirm("Are you sure you want to cancel this pending electrical service request?")) {
+      const card = btn.closest('.booking-card');
+      card.style.opacity = '0.5';
+      card.style.pointerEvents = 'none';
+      setTimeout(() => {
+        card.remove();
+        showToast("Booking request cancelled successfully.");
+      }, 300);
+    }
+  }
+
+  function editBookingModal() {
+    showToast("Editing mode opened for Friday schedule.");
+  }
+
+  function downloadReceiptNotification(recId) {
+    showToast("Receipt " + recId + " downloaded to your device.");
+  }
+
+  function triggerRebook(serviceName) {
+    showToast("Selected " + serviceName + ". Preparing fast rebook...");
+  }
+
+  function triggerQuickBook() {
+    showToast("Launching booking catalog...");
+  }
+
+  function openDetailsModal(service, provider, price, time) {
+    document.getElementById('modal-service').innerText = service;
+    document.getElementById('modal-provider').innerText = provider;
+    document.getElementById('modal-price').innerText = price;
+    document.getElementById('modal-time').innerText = time;
+    const modal = document.getElementById('booking-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeDetailsModal() {
+    const modal = document.getElementById('booking-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="services" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Services</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="book-service" href="#"><span class="material-symbols-outlined text-[24px]">add_circle</span><span class="font-label-sm text-label-sm mt-0.5">Book</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-secondary font-semibold" data-path="my-bookings" href="#"><span class="material-symbols-outlined text-[24px]">calendar_today</span><span class="font-label-sm text-label-sm mt-0.5">Bookings</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="provider-view" href="#"><span class="material-symbols-outlined text-[24px]">engineering</span><span class="font-label-sm text-label-sm mt-0.5">Provider</span></a></div></nav></body></html>
